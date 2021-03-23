@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Татьяна Ясюченя](https://up.htmlacademy.ru/adaptive/22/user/1269007).
-* Наставник: `Тина Кузьменко`(https://htmlacademy.ru/profile/tina_kuzmenko).
+* Наставник: [Тина Кузьменко] (https://htmlacademy.ru/profile/tina_kuzmenko).
 
 ---
 
