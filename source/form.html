@@ -44,77 +44,72 @@
         <div class="container">
           <h1 class="form__headline">Подбор программы</h1>
           <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <fieldset class="form__fieldset input">
-            <div class="input__wrapper">
-              <label class="input__label" for="cat-name">Имя:*</label>
-              <input class="input__text input__text--required" type="text" id="cat-name">
+          <fieldset class="form__fieldset fieldset">
+            <div class="form__row">
+              <label class="label" for="cat-name">Имя:*</label>
+              <input class="input input input--required" type="text" id="cat-name">
             </div>
-            <div class="input__wrapper">
-              <label class="input__label" for="cat-weight">Вес (кг):*</label>
-              <input class="input__text input__text--required" type="text" id="cat-weight" >
+            <div class="form__row">
+              <label class="label" for="cat-weight">Вес (кг):*</label>
+              <input class="input inpu input--required" type="text" id="cat-weight" >
             </div>
-            <div class="input__wrapper">
-              <label class="input__label" for="cat-age">Возраст (лет):</label>
-              <input class="input__text" type="text" id="cat-age" >
+            <div class="form__row">
+              <label class="label" for="cat-age">Возраст (лет):</label>
+              <input class="input input" type="text" id="cat-age" >
             </div>
           </fieldset>
-
-          <fieldset class="form__fieldset radio">
-            <ul class="radio__list">
-              <li class="radio__item">
-                <input class="radio__button" type="radio" id="lose-weight" name="programme" checked>
-                <label class="radio__label" for="lose-weight">Похудение</label>
+          <fieldset class="form__fieldset fieldset">
+            <ul class="fieldset__list">
+              <li class="fieldset__item">
+                <input class="input input--radio" type="radio" id="lose-weight" name="programme" checked>
+                <label class="label" for="lose-weight">Похудение</label>
               </li>
-              <li class="radio__item">
-                <input class="radio__button" type="radio" id="plus-weight" name="programme">
-                <label class="radio__label" for="plus-weight">Набор массы</label>
+              <li class="fieldset__item">
+                <input class="input input--radio" type="radio" id="plus-weight" name="programme">
+                <label class="label" for="plus-weight">Набор массы</label>
               </li>
-              <li class="radio__item">
-                <input class="radio__button" type="radio" id="need-advice" name="programme">
-                <label class="radio__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+              <li class="fieldset__item">
+                <input class="input input--radio" type="radio" id="need-advice" name="programme">
+                <label class="label" for="need-advice">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
-
-          <fieldset class="form__fieldset input">
-            <legend class="input__legend">Контактные данные (владельца кота)</legend>
-            <div class="input__wrapper">
-              <label class="input__label" for="email">E-mail:*</label>
-              <input class="input__text input__text--required" type="text" id="email" placeholder="kuklachev@gmail.com">
+          <fieldset class="form__fieldset fieldset">
+            <legend class="legend">Контактные данные (владельца кота)</legend>
+            <div class="form__row">
+              <label class="label" for="email">E-mail:*</label>
+              <input class="input input--required" type="text" id="email" placeholder="kuklachev@gmail.com">
             </div>
-            <div class="input__wrapper">
-              <label class="input__label" for="phone">Телефон:*</label>
-              <input class="input__text input__text--required" type="text" id="phone" placeholder="8 (960) 900-60-90">
-            </div>
-          </fieldset>
-
-          <fieldset class="form__fieldset input">
-            <legend class="input__legend">Комментарий</legend>
-            <div class="input__wrapper">
-              <label class="input__label visually-hidden" for="feedback"></label>
-              <textarea class="input__text" id="feedback" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="form__row">
+              <label class="label" for="phone">Телефон:*</label>
+              <input class="input input--required" type="text" id="phone" placeholder="8 (960) 900-60-90">
             </div>
           </fieldset>
-
-
-          <fieldset class="form__fieldset checkbox">
-            <legend class="checkbox__legend">Дополнительно</legend>
-            <ul class="checkbox__list">
-              <li class="checkbox__item">
-                <input class="checkbox__button" type="checkbox" id="sweetener" name="supplements" checked>
-                <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
+          <fieldset class="form__fieldset fieldset">
+            <legend class="legend">Комментарий</legend>
+            <div class="form__column">
+              <label class="visually-hidden" for="feedback"></label>
+              <textarea class="input" id="feedback" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset fieldset">
+            <legend class="legend">Дополнительно</legend>
+            <ul class="fieldset__list">
+              <li class="fieldset__item">
+                <input class="input input--checkbox" type="checkbox" id="sweetener" name="supplements" checked>
+                <label class="label" for="sweetener">Сахарозаменитель</label>
               </li>
-              <li class="checkbox__item">
-                <input class="checkbox__button" type="checkbox" id="water" name="supplements">
-                <label class="checkbox__label" for="water">Питьевая вода</label>
+              <li class="fieldset__item">
+                <input class="input input--checkbox" type="checkbox" id="water" name="supplements">
+                <label class="label" for="water">Питьевая вода</label>
               </li>
-              <li class="checkbox__item">
-                <input class="checkbox__button" type="checkbox" id="milk" name="supplements">
-                <label class="checkbox__label" for="milk">Молоко</label>
+              <li class="fieldset__item">
+                <input class="input input--checkbox" type="checkbox" id="milk" name="supplements">
+                <label class="label" for="milk">Молоко</label>
               </li>
-              <li class="checkbox__item">
-                <input class="checkbox__button" type="checkbox" id="vitamins" name="supplements">
-                <label class="checkbox__label" for="vitamins">Витамины</label>
+              <li class="fieldset__item">
+                <input class="input input--checkbox" type="checkbox" id="vitamins" name="supplements">
+                <label class="label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
