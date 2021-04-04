@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -40,75 +41,75 @@
         </nav>
     </header>
     <main class="page-form">
-      <section class="form">
+      <form class="form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
         <div class="container">
           <h1 class="form__headline headline">Подбор программы</h1>
           <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <fieldset class="form__section section">
+          <fieldset class="form__section form-section">
             <div class="form__row">
               <label class="label" for="cat-name">Имя:*</label>
-              <input class="input input--required" type="text" id="cat-name">
+              <input class="form-input form-input--required" type="text" id="cat-name">
             </div>
             <div class="form__row">
               <label class="label" for="cat-weight">Вес (кг):*</label>
-              <input class="input input--required" type="text" id="cat-weight" >
+              <input class="form-input form-input--required" type="text" id="cat-weight" >
             </div>
             <div class="form__row">
               <label class="label" for="cat-age">Возраст (лет):</label>
-              <input class="input" type="text" id="cat-age" >
+              <input class="form-input" type="text" id="cat-age" >
             </div>
           </fieldset>
-          <fieldset class="form__section section">
+          <fieldset class="form__section form-section">
             <ul class="section__list">
               <li class="section__item">
-                <input class="input input--radio" type="radio" id="lose-weight" name="programme" checked>
+                <input class="form-input form-input--radio" type="radio" id="lose-weight" name="programme" checked>
                 <label class="label" for="lose-weight">Похудение</label>
               </li>
               <li class="section__item">
-                <input class="input input--radio" type="radio" id="plus-weight" name="programme">
+                <input class="form-input form-input--radio" type="radio" id="plus-weight" name="programme">
                 <label class="label" for="plus-weight">Набор массы</label>
               </li>
               <li class="section__item">
-                <input class="input input--radio" type="radio" id="need-advice" name="programme">
+                <input class="form-input form-input--radio" type="radio" id="need-advice" name="programme">
                 <label class="label" for="need-advice">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__section section">
-            <legend class="section__title title">Контактные данные (владельца кота)</legend>
+          <fieldset class="form__section form-section">
+            <legend class="section__title section-title">Контактные данные (владельца кота)</legend>
             <div class="form__row">
               <label class="label" for="email">E-mail:*</label>
-              <input class="input input--required" type="text" id="email" placeholder="kuklachev@gmail.com">
+              <input class="form-input form-input--required" type="text" id="email" placeholder="kuklachev@gmail.com">
             </div>
             <div class="form__row">
               <label class="label" for="phone">Телефон:*</label>
-              <input class="input input--required" type="text" id="phone" placeholder="8 (960) 900-60-90">
+              <input class="form-input form-input--required" type="text" id="phone" placeholder="8 (960) 900-60-90">
             </div>
           </fieldset>
-          <fieldset class="form__section section">
-            <legend class="section__title title">Комментарий</legend>
+          <fieldset class="form__section form-section">
+            <legend class="section__title section-title">Комментарий</legend>
             <div class="form__column">
               <label class="visually-hidden" for="feedback"></label>
-              <textarea class="input" id="feedback" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form-input" id="feedback" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
-          <fieldset class="form__section section">
-            <legend class="section__title title">Дополнительно</legend>
+          <fieldset class="form__section form-section">
+            <legend class="section__title section-title">Дополнительно</legend>
             <ul class="section__list">
               <li class="section__item">
-                <input class="input input--checkbox" type="checkbox" id="sweetener" name="supplements" checked>
+                <input class="form-input form-input--checkbox" type="checkbox" id="sweetener" name="supplements" checked>
                 <label class="label" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="section__item">
-                <input class="input input--checkbox" type="checkbox" id="water" name="supplements">
+                <input class="form-input form-input--checkbox" type="checkbox" id="water" name="supplements">
                 <label class="label" for="water">Питьевая вода</label>
               </li>
               <li class="section__item">
-                <input class="input input--checkbox" type="checkbox" id="milk" name="supplements">
+                <input class="form-input form-input--checkbox" type="checkbox" id="milk" name="supplements">
                 <label class="label" for="milk">Молоко</label>
               </li>
               <li class="section__item">
-                <input class="input input--checkbox" type="checkbox" id="vitamins" name="supplements">
+                <input class="form-input form-input--checkbox" type="checkbox" id="vitamins" name="supplements">
                 <label class="label" for="vitamins">Витамины</label>
               </li>
             </ul>
@@ -116,7 +117,7 @@
           <button class="form__button button" type="submit" aria-label="Подобрать программу питания по выбранным параметрам">Отправить заявку</button>
           <p class="form__footnote footnote">* — Обязательные поля</p>
         </div>
-      </section>
+      </form>
     </main>
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
