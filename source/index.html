@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <div class="container">
         <div class="logo-wrapper">
@@ -42,6 +43,7 @@
     <main class="page-main">
       <section class="promo">
         <div class="promo__header">
+          <div class="promo__background-wrapper"></div>
           <div class="container">
             <h1 class="promo__headline">Функциональное питание для котов</h1>
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
@@ -98,8 +100,8 @@
             <span class="total-price__text">15 000 руб</span>
           </div>
           <div class="example__slider slider">
-            <img class="slider__pic slider__pic--before" src="img/before-mobile.jpg" width="251" height="240" alt="Толстый пушистый двухцветный кот">
-            <img class="slider__pic slider__pic--after" src="img/after-mobile.jpg" width="251" height="240" alt="Стройный пушистый двухцветный кот">
+            <img class="slider__pic slider__pic--before" src="img/before-mobile.png" width="311" height="232" alt="Толстый пушистый двухцветный кот">
+            <img class="slider__pic slider__pic--after" src="img/after-mobile.png" width="251" height="240" alt="Стройный пушистый двухцветный кот">
           </div>
           <div class="example__toggles">
             <button class="example__toggle-text toggle-text toggle-text--before" type="button" aria-label="Показать фото до Cat Energy">Было</button>
@@ -107,7 +109,7 @@
               <input class="toggles-cropped__input toggles-cropped__input--checked" type="checkbox" id="check-after" name="toggle" value="after">
               <label class="toggles-cropped__label toggles-cropped__label--checked" for="check-after"></label>
             </div>
-            <div class="example__toggles-full toggles-full">
+            <div class="example__toggles-full toggles-full visually-hidden">
               <div class="toggles-full__scale"></div>
               <button class="toggles-full__toggle" type="button" aria-label="Переключать между фото до и после Cat Energy"></button>
             </div>
@@ -161,7 +163,7 @@
           </div>
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика">HTML Academy
-              <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+              <img class="copyright__icon" src="img/academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
             </a>
           </div>
         </div>

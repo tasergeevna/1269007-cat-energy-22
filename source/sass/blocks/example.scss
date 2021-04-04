@@ -1,0 +1,23 @@
+.example {
+    width: $mobile-width;
+    background-color: $grey;
+    padding: 27px 0 31px 0;
+}
+
+.example__text {
+    margin: 0;
+}
+
+.example__toggle-text {
+    background-color: transparent;
+    border: none;
+    font-family: $oswald;
+    font-size: 16px;
+    line-height: 20px;
+    color: $black;
+    text-transform: uppercase;
+}
+
+
+
+

@@ -1,0 +1,26 @@
+.main-nav__toggle {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.main-nav__list {
+    @include reset-list();
+}
+
+.main-nav__item {
+    padding: 22px 10px 24px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main-nav__link {
+    font-family: $oswald;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $black;
+    text-decoration: none;
+}
+
