@@ -1,13 +1,13 @@
 .profits__headline {
-    margin-bottom: 38px;
+  margin-bottom: 38px;
 }
 
 .profits__list {
-    @include reset-list();
-    margin-left: 80px;
-    padding-bottom: 42px;
+  @include reset-list();
+  margin-left: 80px;
+  padding-bottom: 42px;
 }
 
 .profits__item:not(:last-of-type) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
