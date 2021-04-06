@@ -1,5 +1,5 @@
 .contacts {
-  width: $mobile-width;
+  padding-top: 28px;
 }
 
 .contacts__headline {
@@ -9,8 +9,11 @@
   font-weight: 400;
   color: $soft-black;
   text-transform: uppercase;
-  padding: 28px 0;
   margin: 0;
+}
+
+.contacts__adress-wrapper {
+  margin-bottom: 26px;
 }
 
 .contacts__adress {

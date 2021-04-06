@@ -4,10 +4,16 @@
 
 .profits__list {
   @include reset-list();
-  margin-left: 80px;
+  padding-left: 80px;
   padding-bottom: 42px;
 }
 
-.profits__item:not(:last-of-type) {
-  margin-bottom: 20px;
+//паддинги задала именно списку, потому что у родителя есть еще заголовок, которому отступ не нужен
+
+.profits__item {
+  padding-bottom: 20px;
+}
+
+.profits__item:last-of-type {
+  padding-bottom: 0;
 }

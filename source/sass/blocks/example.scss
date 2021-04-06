@@ -1,11 +1,19 @@
 .example {
-  width: $mobile-width;
   background-color: $grey;
   padding: 27px 0 31px 0;
 }
 
+.example__headline {
+  margin: 0;
+  margin-bottom: 33px;
+}
+
 .example__text {
   margin: 0;
+}
+
+.example__total-price {
+  margin-bottom: 42px;
 }
 
 .example__toggle-text {
@@ -16,4 +24,5 @@
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+  cursor: pointer;
 }

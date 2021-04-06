@@ -1,6 +1,6 @@
 .page-body {
-  width: $mobile-width;
-  margin: 0 auto;
+  min-width: $mobile-width;
+  margin: 0;
   padding: 0;
   font-family: $arial;
   font-size: 14px;
