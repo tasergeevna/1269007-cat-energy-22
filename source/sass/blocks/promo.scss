@@ -4,8 +4,7 @@
 }
 
 .promo__header::before {
-  position: absolute;
-  content: "";
+  @include pseudo;
   top: -27px;
   left: 50%;
   transform: translateX(-50%);
@@ -17,8 +16,7 @@
 }
 
 .promo__header::after {
-  position: absolute;
-  content: "";
+  @include pseudo;
   top: -27px;
   left: 50%;
   transform: translateX(-50%);
