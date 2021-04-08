@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <div class="container">
         <div class="logo-wrapper">
@@ -51,19 +52,19 @@
         </div>
         <div class="container">
           <div class="promo__wrapper">
-            <div class="promo__item">
-              <h2 class="promo__item-headline promo__item-headline--slim">Похудение</h2>
-              <p class="promo__item-text">
+            <div class="promo__item promo-item">
+              <h2 class="promo-item__headline promo-item__headline--slim">Похудение</h2>
+              <p class="promo-item__text">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
-              <a class="promo__item-link" href="catalog.html" aria-label="Перейти на страницу с продуктами программы для похудения">каталог slim</a>
+              <a class="promo-item__link" href="catalog.html" aria-label="Перейти на страницу с продуктами программы для похудения">каталог slim</a>
             </div>
-            <div class="promo__item">
-              <h2 class="promo__item-headline promo__item-headline--strong">Набор массы</h2>
-              <p class="promo__item-text">
+            <div class="promo__item promo-item">
+              <h2 class="promo-item__headline promo-item__headline--strong">Набор массы</h2>
+              <p class="promo-item__text">
                 Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="promo__item-link" href="catalog.html" aria-label="Перейти на страницу с продуктами программы для набора мышечной массы">каталог pro</a>
+              <a class="promo-item__link" href="catalog.html" aria-label="Перейти на страницу с продуктами программы для набора мышечной массы">каталог pro</a>
             </div>
           </div>
         </div>
@@ -98,8 +99,8 @@
             <span class="total-price__text">15 000 руб</span>
           </div>
           <div class="example__slider slider">
-            <img class="slider__pic slider__pic--before" src="img/before-mobile.jpg" width="251" height="240" alt="Толстый пушистый двухцветный кот">
-            <img class="slider__pic slider__pic--after" src="img/after-mobile.jpg" width="251" height="240" alt="Стройный пушистый двухцветный кот">
+            <img class="slider__pic slider__pic--before" src="img/before-mobile.png" width="311" height="232" alt="Толстый пушистый двухцветный кот">
+            <img class="slider__pic slider__pic--after display-none" src="img/after-mobile.png" width="251" height="240" alt="Стройный пушистый двухцветный кот">
           </div>
           <div class="example__toggles">
             <button class="example__toggle-text toggle-text toggle-text--before" type="button" aria-label="Показать фото до Cat Energy">Было</button>
@@ -107,7 +108,7 @@
               <input class="toggles-cropped__input toggles-cropped__input--checked" type="checkbox" id="check-after" name="toggle" value="after">
               <label class="toggles-cropped__label toggles-cropped__label--checked" for="check-after"></label>
             </div>
-            <div class="example__toggles-full toggles-full">
+            <div class="example__toggles-full toggles-full display-none">
               <div class="toggles-full__scale"></div>
               <button class="toggles-full__toggle" type="button" aria-label="Переключать между фото до и после Cat Energy"></button>
             </div>
@@ -126,7 +127,7 @@
           </div>
         </div>
         <h3 class="visually-hidden">Карта с адресом</h3>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002699!2d30.320858715536975!3d59.93871916905485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1616755856988!5m2!1sru!2sby" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002699!2d30.320858715536975!3d59.93871916905485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1616755856988!5m2!1sru!2sby" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
       </section>
       <section class="page-footer__bottom-wrapper">
         <h2 class="visually-hidden">Ссылки для обратной связи</h2>
@@ -161,7 +162,7 @@
           </div>
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика">HTML Academy
-              <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+              <img class="copyright__icon" src="img/academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
             </a>
           </div>
         </div>

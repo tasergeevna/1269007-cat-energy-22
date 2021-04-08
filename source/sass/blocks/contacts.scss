@@ -1,0 +1,22 @@
+.contacts {
+  padding-top: 28px;
+}
+
+.contacts__headline {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $soft-black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contacts__adress-wrapper {
+  margin-bottom: 26px;
+}
+
+.contacts__adress {
+  line-height: 20px;
+  margin: 0;
+}

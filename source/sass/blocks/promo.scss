@@ -1,0 +1,60 @@
+.promo__header {
+  min-height: 502px;
+  position: relative;
+  margin: 27px 15px 0 16px;
+}
+
+.promo__header::before {
+  @include pseudo;
+  top: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 302px;
+  background-image: linear-gradient(to top, $green-opacity, $green-opacity), url("../img/index-background-mobile.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.promo__headline {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+
+.promo__slogan {
+  margin: 0 42px 29px 40px;
+  font-family: $oswald;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+  position: relative;
+  z-index: 1;
+}
+
+.promo__pic {
+  position: relative;
+  z-index: 2;
+}
+
+.promo__button {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.promo__item {
+  padding: 30px 32px 18px 20px;
+  margin-bottom: 20px;
+}
+
+.promo__item:last-child {
+  margin-bottom: 0;
+}
