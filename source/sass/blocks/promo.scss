@@ -1,7 +1,11 @@
+.promo {
+  padding-top: 27px;
+}
+
 .promo__header {
   min-height: 502px;
   position: relative;
-  margin: 27px 15px 0 16px;
+  margin: 0 15px 0 16px;
 }
 
 .promo__header::before {
@@ -17,6 +21,7 @@
 }
 
 .promo__headline {
+  margin: 0;
   margin-bottom: 25px;
   text-align: center;
   font-family: $oswald;
