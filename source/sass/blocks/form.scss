@@ -2,23 +2,23 @@
   margin: 0;
   padding: 0;
   margin-bottom: 52px;
-}
 
-.form__section--short-indent {
-  margin-bottom: 23px;
-}
+  &--short-indent {
+    margin-bottom: 23px;
+  }
 
-.form__section--last {
-  margin-bottom: 34px;
+  &--last {
+    margin-bottom: 34px;
+  }
 }
 
 .form__headline {
   margin: 0;
   margin-bottom: 37px;
-}
 
-.form__headline:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__description {
@@ -30,10 +30,10 @@
 
 .form__row {
   margin-bottom: 14px;
-}
 
-.form__row:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__button {

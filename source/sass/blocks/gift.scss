@@ -1,0 +1,23 @@
+.gift {
+  padding-top: 16px;
+}
+
+.gift__wrapper {
+  min-height: 289px;
+  padding: 186px 61px 43px 58px;
+  background-image: url("../img/gift-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gift__link {
+  text-decoration: none;
+}
+
+.gift__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+}
