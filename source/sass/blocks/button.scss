@@ -7,4 +7,9 @@
   border: none;
   box-sizing: border-box;
   cursor: pointer;
+
+  &--secondary {
+    background-color: $basic-grey;
+    color: $darkgrey;
+  }
 }

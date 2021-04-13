@@ -1,0 +1,28 @@
+.product__pic-link {
+  display: block;
+}
+
+.product__pic {
+  margin: 14px 36px 12px 36px;
+}
+
+.product__description {
+  margin-bottom: 22px;
+
+  &--more {
+    margin-bottom: 15px;
+  }
+}
+
+.product__button {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.product__plus-icon {
+  margin-left: 125px;
+  margin-bottom: 23px;
+}

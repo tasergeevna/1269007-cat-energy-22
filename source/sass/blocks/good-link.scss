@@ -1,0 +1,12 @@
+.good-link {
+  text-decoration: none;
+}
+
+.good-link__name {
+  margin: 0;
+  margin-bottom: 18px;
+
+  &--more {
+    margin-bottom: 13px;
+  }
+}

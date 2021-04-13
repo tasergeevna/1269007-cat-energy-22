@@ -1,0 +1,17 @@
+.gift__link {
+  text-decoration: none;
+  min-height: 289px;
+  background-image: url("../img/gift-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.gift__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+  padding: 186px 61px 43px 58px;
+}

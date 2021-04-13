@@ -12,8 +12,8 @@
 
 .form-section__item {
   margin-bottom: 13px;
-}
 
-.form-section__item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

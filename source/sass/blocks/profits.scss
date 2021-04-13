@@ -14,8 +14,8 @@
 
 .profits__item {
   margin-bottom: 20px;
-}
 
-.profits__item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

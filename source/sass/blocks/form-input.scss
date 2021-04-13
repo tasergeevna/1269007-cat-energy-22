@@ -7,13 +7,12 @@
   text-transform: uppercase;
   padding: 13px 5px 13px 15px;
   box-sizing: border-box;
-}
 
-.form-input--textarea {
-  padding-top: 9px;
-  margin: 0;
-  width: 100%;
-  min-height: 150px;
-  box-sizing: border-box;
-  resize: none;
+  &--textarea {
+    padding-top: 9px;
+    margin: 0;
+    width: 100%;
+    min-height: 150px;
+    resize: none;
+  }
 }
