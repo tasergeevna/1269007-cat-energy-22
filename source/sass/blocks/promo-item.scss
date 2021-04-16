@@ -6,10 +6,20 @@
   margin: 0 0 29px 91px;
   font-family: $oswald;
   font-size: 24px;
-  line-height: 37px;
+  line-height: 36px;
   text-transform: uppercase;
   color: $black;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 214px;
+  }
 }
 
 .promo-item__link {
@@ -20,6 +30,11 @@
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .promo-item__text {

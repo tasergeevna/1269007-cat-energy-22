@@ -1,9 +1,9 @@
 .catalog-section {
   padding-top: 27px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 
   &--last {
-    margin-bottom: 41px;
+    padding-bottom: 41px;
   }
 }
 
@@ -15,8 +15,9 @@
 .catalog-section__product {
   margin-bottom: 28px;
 
-  &--last {
-    margin-bottom: 34px;
+  &:last-child {
+    padding-top: 6px;
+    margin-bottom: 0;
   }
 }
 

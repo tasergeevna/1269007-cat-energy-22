@@ -1,0 +1,9 @@
+.nav-toggle {
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

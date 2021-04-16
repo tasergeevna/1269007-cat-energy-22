@@ -1,0 +1,31 @@
+.page-header__logo-wrapper {
+  padding-top: 12px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 174px 440px;
+    column-gap: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 202px 480px;
+    column-gap: 540px;
+  }
+}
+
+

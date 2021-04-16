@@ -14,9 +14,13 @@
 @import "blocks/button.scss";
 @import "blocks/page.scss";
 @import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo-wrapper.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/nav-toggle.scss";
 @import "blocks/section-headline.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/logo-text.scss";
 @import "blocks/contacts.scss";
 @import "blocks/socials.scss";
 @import "blocks/copyright.scss";
@@ -46,4 +50,4 @@
 @import "blocks/product.scss";
 @import "blocks/properties.scss";
 @import "blocks/plus-icon.scss";
-@import "blocks/gift.scss";
+@import "blocks/gift-link.scss";
