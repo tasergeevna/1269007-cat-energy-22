@@ -3,10 +3,12 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 11px;
   }
 }
 
@@ -19,13 +21,5 @@
 
   @media (min-width: $tablet-width) {
     max-width: 162px;
-  }
-}
-
-.stats__numbers {
-  margin-bottom: 15px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 11px;
   }
 }
