@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__icon {
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
+}

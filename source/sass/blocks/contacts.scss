@@ -6,7 +6,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    position: relative;
+    padding: 83px 0 102px 0;
   }
 }
 
@@ -24,10 +25,7 @@
   @media (min-width: $desktop-width) {
     max-width: 570px;
     min-height: 201px;
-    position: absolute;
     background-color: $white;
-    left: 0;
-    top: 95px;
     padding: 66px 89px 51px 76px;
     column-gap: 87px;
   }
@@ -50,6 +48,10 @@
 
 .contacts__adress-wrapper {
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__adress {
@@ -74,4 +76,11 @@
 .contacts__map {
   width: 100%;
   display: block;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    min-height: 400px;
+  }
 }

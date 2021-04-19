@@ -1,0 +1,49 @@
+.slider__pic--full {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.slider__pic--cropp {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__toggle-text {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slider__toggles-cropped {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__toggles-full {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

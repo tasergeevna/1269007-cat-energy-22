@@ -1,9 +1,11 @@
-.promo-item {
+.programs-item {
   background-color: $basic-grey;
 }
 
-.promo-item__headline {
-  margin: 0 0 29px 91px;
+.programs-item__headline {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 91px;
   font-family: $oswald;
   font-size: 24px;
   line-height: 36px;
@@ -12,17 +14,19 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     margin-bottom: 24px;
+    padding-left: 0;
     font-size: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 73px 214px;
+    margin: 0;
+    margin-bottom: 73px;
+    padding-left: 214px;
   }
 }
 
-.promo-item__link {
+.programs-item__link {
   margin: 0;
   font-family: $oswald;
   font-size: 16px;
@@ -37,7 +41,7 @@
   }
 }
 
-.promo-item__text {
+.programs-item__text {
   margin: 0;
   margin-bottom: 23px;
   border-bottom: 1px solid $promo-border-grey;

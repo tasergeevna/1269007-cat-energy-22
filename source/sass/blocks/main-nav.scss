@@ -2,12 +2,9 @@
   @include reset-list();
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    padding-top: 42px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 69px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 35px;
   }
 }
 
@@ -18,11 +15,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-right: 35px;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 

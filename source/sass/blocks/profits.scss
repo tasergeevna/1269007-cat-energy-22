@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 0 262px 0;
+    padding: 71px 0 11px 0;
   }
 }
 
@@ -27,13 +27,13 @@
     padding-left: 0;
     text-align: left;
     display: grid;
-    grid-template-columns: repeat(2, 246px);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 137px;
     row-gap: 124px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 245px);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 79px;
     row-gap: unset;
   }

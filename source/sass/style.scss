@@ -15,7 +15,7 @@
 @import "blocks/page.scss";
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
-@import "blocks/logo-wrapper.scss";
+@import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/nav-toggle.scss";
 @import "blocks/section-headline.scss";
@@ -27,11 +27,13 @@
 
 // Главная страница
 @import "blocks/promo.scss";
-@import "blocks/promo-item.scss";
+@import "blocks/programs-item.scss";
+@import "blocks/programs.scss";
 @import "blocks/profits.scss";
 @import "blocks/example.scss";
 @import "blocks/stats.scss";
 @import "blocks/total-price.scss";
+@import "blocks/slider.scss";
 
 // Страница формы
 @import "blocks/page-form.scss";

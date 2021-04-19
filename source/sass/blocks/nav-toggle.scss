@@ -2,6 +2,18 @@
   border: none;
   outline: none;
   background-color: transparent;
+  position: relative;
+  padding: 15px 15px;
+  cursor: pointer;
+
+  &::after {
+    @include pseudo;
+    box-shadow: 0 2px $black, 0 8px $black, 0 13px $black;
+    width: 24px;
+    height: 2px;
+    bottom: 20px;
+    right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;

@@ -27,7 +27,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -40,7 +40,13 @@
 }
 
 .page-footer__socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 34px;
+  justify-items: center;
+  align-items: end;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 24px;
+  }
 }

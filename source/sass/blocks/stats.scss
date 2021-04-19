@@ -18,8 +18,4 @@
 
 .stats__item {
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    max-width: 162px;
-  }
 }

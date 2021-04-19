@@ -1,29 +1,34 @@
-.page-header__logo-wrapper {
-  padding-top: 12px;
+.page-header--pseudo {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/index-background-full.png"), linear-gradient(to left, $darkgreen 50%, $white 50%);
+    background-position: 100% 0, 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 82px;
+  }
+}
+
+.page-header__logo {
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 31px;
     margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 53px;
   }
 }
 
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 174px 440px;
-    column-gap: 95px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 202px 480px;
-    column-gap: 540px;
+    padding-top: 53px;
   }
 }

@@ -5,28 +5,51 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-bottom: 64px;
+    background-color: $white;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      @include pseudo;
+      background-color: $grey;
+      width: 100vw;
+      min-height: 462px;
+      bottom: 0;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 70px;
-    display: grid;
-    grid-template-columns: 431px 590px;
-    column-gap: 134px;
     background-color: $grey;
-    position: relative;
     justify-content: center;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      @include pseudo;
+      background-color: $white;
+      width: 100vw;
+      min-height: 243px;
+      top: 0;
+      z-index: -1;
+    }
   }
 }
 
-.example__header-wrapper {
-  @media (min-width: $tablet-width) {
-    background-color: $white;
-    padding-bottom: 250px;
-  }
-
+.example__text-wrapper {
   @media (min-width: $desktop-width) {
-    padding-bottom: 0;
-    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.example__total-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -41,9 +64,10 @@
   @media (min-width: $desktop-width) {
     max-width: 431px;
     margin: 0;
-    position: absolute;
-    left: 316px;
-    top: -146px;
+    margin-bottom: 134px;
+    position: relative;
+    z-index: 1;
+    flex: 1;
   }
 }
 
@@ -123,44 +147,8 @@
   }
 }
 
-.example__slider-inner-wrapper {
+.example__slider-wrapper {
   @media (min-width: $desktop-width) {
     max-width: 590px;
-  }
-}
-
-.example__toggle-text {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  font-family: $oswald;
-  font-size: 16px;
-  line-height: 20px;
-  color: $black;
-  text-transform: uppercase;
-  cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.example__toggles {
-  display: flex;
-  justify-content: space-around;
-}
-
-.example__toggles-cropped {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.example__toggles-full {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
   }
 }
