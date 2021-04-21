@@ -14,13 +14,14 @@
   min-height: 502px;
   position: relative;
   margin: 0 15px 0 16px;
+  overflow-x: hidden;
 
   &::before {
     @include pseudo;
     top: -27px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 100vw;
     height: 302px;
     background-image: url("../img/index-background-mobile.png"), linear-gradient(to top, $darkgreen, $darkgreen);
     background-position: 50% 0, 0 0;
