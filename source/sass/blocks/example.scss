@@ -8,6 +8,7 @@
     background-color: $white;
     position: relative;
     z-index: 0;
+    overflow: hidden;
 
     &::before {
       @include pseudo;
@@ -21,20 +22,14 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 70px;
-    background-color: $grey;
+    background: linear-gradient(to right, $basic-grey 76.7%, $grey 23.3%);
     justify-content: center;
 
     &::before {
-      display: none;
-    }
-
-    &::after {
-      @include pseudo;
       background-color: $white;
-      width: 100vw;
       min-height: 243px;
       top: 0;
-      z-index: -1;
+      bottom: unset;
     }
   }
 }
@@ -144,6 +139,14 @@
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    min-width: 708px;
+    min-height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    min-width: 690px;
+    min-height: 552px;
   }
 }
 

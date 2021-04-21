@@ -1,5 +1,14 @@
 .programs-item {
   background-color: $basic-grey;
+  padding: 30px 32px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 193px 53px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 51px 55px 52px;
+  }
 }
 
 .programs-item__headline {

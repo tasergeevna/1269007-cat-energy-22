@@ -20,10 +20,10 @@
     top: -27px;
     left: 50%;
     transform: translateX(-50%);
-    width: 320px;
+    width: 100%;
     height: 302px;
-    background-image: linear-gradient(to top, $green-opacity, $green-opacity), url("../img/index-background-mobile.jpg");
-    background-position: 0 0;
+    background-image: url("../img/index-background-mobile.png"), linear-gradient(to top, $darkgreen, $darkgreen);
+    background-position: 50% 0, 0 0;
     background-repeat: no-repeat;
   }
 
