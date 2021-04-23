@@ -1,9 +1,8 @@
 .product__pic-link {
   display: block;
-}
-
-.product__pic {
-  margin: 14px 36px 12px 36px;
+  padding: 11px 36px 12px 36px;
+  min-height: 112px;
+  box-sizing: border-box;
 }
 
 .product__description {
@@ -23,6 +22,5 @@
 }
 
 .product__plus-icon {
-  margin-left: 125px;
   margin-bottom: 23px;
 }

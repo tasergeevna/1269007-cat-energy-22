@@ -8,6 +8,17 @@
   box-sizing: border-box;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: $hovergreen;
+  }
+
+  &:active {
+    background-color: $hovergreen;
+    color: $white-opacity;
+    filter: drop-shadow(0 4px 0 $black-opacity);
+  }
+
   &--secondary {
     background-color: $basic-grey;
     color: $darkgrey;

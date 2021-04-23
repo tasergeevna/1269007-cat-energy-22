@@ -3,8 +3,19 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 11px;
+  }
 }
 
 .stats__text {
   margin: 0;
+}
+
+.stats__item {
+  text-align: center;
 }

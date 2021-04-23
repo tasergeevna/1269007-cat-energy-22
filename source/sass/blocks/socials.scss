@@ -1,3 +1,7 @@
 .socials {
   @include reset-list();
 }
+
+.socials__link {
+  display: block;
+}

@@ -1,17 +1,21 @@
-.main-nav__toggle {
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-
 .main-nav__list {
   @include reset-list();
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 35px;
+  }
 }
 
 .main-nav__item {
   padding: 22px 10px 24px 10px;
   box-sizing: border-box;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-nav__link {
@@ -22,4 +26,18 @@
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+    position: relative;
+    z-index: 1;
+  }
 }
