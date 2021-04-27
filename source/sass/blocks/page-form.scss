@@ -1,3 +1,21 @@
 .page-form {
   padding: 27px 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 72px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0 82px 0;
+  }
+}
+
+.page-form__inner-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
