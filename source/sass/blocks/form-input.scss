@@ -7,12 +7,40 @@
   text-transform: uppercase;
   padding: 13px 5px 13px 15px;
   box-sizing: border-box;
+  width: 100%;
+
+  &--radio {
+    width: auto;
+    margin-right: 15px;
+  }
+
+  &--checkbox {
+    width: auto;
+    margin-right: 16px;
+  }
 
   &--textarea {
+    padding: 0;
     padding-top: 9px;
     margin: 0;
     width: 100%;
     min-height: 150px;
     resize: none;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--textarea {
+      min-height: 174px;
+      text-align: left;
+      padding: 9px 10px 10px 19px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 10px 10px 20px;
   }
 }

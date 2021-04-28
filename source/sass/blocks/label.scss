@@ -4,4 +4,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $darkgrey;
+  display: inline-block;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

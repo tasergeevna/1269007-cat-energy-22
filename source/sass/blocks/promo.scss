@@ -13,8 +13,8 @@
 .promo__wrapper {
   min-height: 502px;
   position: relative;
-  margin: 0 15px 0 16px;
   overflow-x: hidden;
+  padding-top: 27px;
 
   &::before {
     @include pseudo;
@@ -30,7 +30,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 872px;
-    margin: 0;
+    padding-top: 0;
 
     &::before {
       display: none;

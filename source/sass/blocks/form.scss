@@ -3,12 +3,40 @@
   padding: 0;
   margin-bottom: 52px;
 
+  &--vertical-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+  }
+
   &--short-indent {
     margin-bottom: 23px;
   }
 
   &--last {
     margin-bottom: 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vertical-grid {
+      row-gap: 20px;
+    }
+
+    &--short-indent {
+      margin-bottom: 65px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.form__outer-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
   }
 }
 
@@ -19,6 +47,14 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .form__description {
@@ -26,22 +62,48 @@
   margin-bottom: 39px;
   font-family: $oswald;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }
 
 .form__row {
-  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+}
 
-  &:last-child {
-    margin-bottom: 0;
+.form__footer-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .form__button {
   width: 100%;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    max-width: fit-content;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 568px;
+  }
 }
 
 .form__footnote {
   margin: 0;
   text-align: center;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: left;
+  }
 }
