@@ -1,3 +1,22 @@
 .plus-icon {
   cursor: pointer;
+
+  &--full {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+
+    &--full {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 30%;
+  }
 }

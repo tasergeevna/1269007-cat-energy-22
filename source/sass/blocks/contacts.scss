@@ -4,19 +4,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 67px;
-
-    &--form {
-      padding-top: 72px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     padding: 83px 0 102px 0;
-
-    &--form {
-      background-color: transparent;
-    }
+    background-color: transparent;
   }
 }
 

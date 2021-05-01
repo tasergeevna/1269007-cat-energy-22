@@ -5,8 +5,21 @@
 .good-link__name {
   margin: 0;
   margin-bottom: 18px;
+  max-width: 76px;
 
   &--more {
     margin-bottom: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 158px;
+    text-align: center;
+    margin-bottom: 21px;
+
+    &--more {
+      margin-bottom: 0;
+    }
   }
 }
