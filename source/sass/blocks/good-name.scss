@@ -5,4 +5,13 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $soft-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+
+    &--last {
+      max-width: 134px;
+    }
+  }
 }

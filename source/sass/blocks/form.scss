@@ -32,6 +32,16 @@
   }
 }
 
+.form__inner-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
 .form__outer-wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
@@ -68,12 +78,6 @@
     line-height: 30px;
     margin-bottom: 66px;
   }
-}
-
-.form__row {
-  display: flex;
-  align-items: center;
-  column-gap: 13px;
 }
 
 .form__footer-wrapper {

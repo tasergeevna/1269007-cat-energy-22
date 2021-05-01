@@ -1,15 +1,109 @@
+.product {
+  padding: 0 36px 40px 36px;
+
+  &--last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $white 10%, $basic-grey 10%);
+
+    &--last,
+    &--added {
+      background: unset;
+      background-color: $white;
+      padding-bottom: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--added {
+      padding: 17px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 80px;
+    }
+  }
+}
+
+.product__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product__link {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.product__pic-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 27px;
+    position: relative;
+  }
+}
+
+.product__pic {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 20px;
+  }
+}
+
 .product__pic-link {
-  display: block;
-  padding: 11px 36px 12px 36px;
   min-height: 112px;
   box-sizing: border-box;
 }
 
 .product__description {
   margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
 
   &--more {
     margin-bottom: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 33px;
+
+    &--more {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--more {
+      grid-column: 1/3;
+      margin-bottom: 0;
+      align-items: center;
+    }
   }
 }
 
@@ -19,8 +113,18 @@
   width: 100%;
   text-align: center;
   vertical-align: middle;
+
+  @media (min-width: $desktop-width) {
+    &--last {
+      padding: 14px 38px;
+    }
+  }
 }
 
 .product__plus-icon {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }

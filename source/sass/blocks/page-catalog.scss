@@ -1,0 +1,11 @@
+.page-catalog__inner-wrapper {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0 $desktop-pads;
+    width: $desktop-width;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    padding-bottom: 86px;
+  }
+}

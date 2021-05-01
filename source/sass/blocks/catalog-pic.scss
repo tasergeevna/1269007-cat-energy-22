@@ -1,0 +1,15 @@
+.catalog-pic {
+  &--full {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--cropp {
+      display: none;
+    }
+
+    &--full {
+      display: block;
+    }
+  }
+}
