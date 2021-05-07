@@ -1,0 +1,14 @@
+.toggle-text {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted $black-opacity;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $black-opacity;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}

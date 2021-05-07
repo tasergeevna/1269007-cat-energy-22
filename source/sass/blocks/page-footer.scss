@@ -2,24 +2,16 @@
   position: relative;
 }
 
-.page-footer__logo {
-  margin-bottom: 32px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-}
-
 .page-footer__bottom-wrapper {
   background-color: $basic-grey;
   padding: 39px 0 22px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0 61px 0;
+    padding: 99px 0 61px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 57px 0 58px 0;
+    padding: 55px 0 58px 0;
   }
 }
 
@@ -32,7 +24,7 @@
 }
 
 .page-footer__socials-wrapper {
-  margin: 20px 0 21px 0;
+  margin: -23px 0 20px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -42,7 +34,6 @@
 .page-footer__socials {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 34px;
   justify-items: center;
   align-items: end;
 

@@ -3,4 +3,20 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    &--title {
+      margin-bottom: 6px;
+    }
+
+    &--numbers {
+      margin-right: 6px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--numbers {
+      margin-right: 42px;
+    }
+  }
 }

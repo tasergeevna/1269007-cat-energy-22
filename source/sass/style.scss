@@ -23,9 +23,11 @@
 @import "blocks/logo-text.scss";
 @import "blocks/contacts.scss";
 @import "blocks/socials.scss";
+@import "blocks/social-icon.scss";
 @import "blocks/copyright.scss";
 
 // Главная страница
+@import "blocks/page-main.scss";
 @import "blocks/promo.scss";
 @import "blocks/programs-item.scss";
 @import "blocks/programs.scss";
@@ -34,6 +36,9 @@
 @import "blocks/stats.scss";
 @import "blocks/total-price.scss";
 @import "blocks/slider.scss";
+@import "blocks/toggles-cropped.scss";
+@import "blocks/toggles-full.scss";
+@import "blocks/toggle-text.scss";
 
 // Страница формы
 @import "blocks/page-form.scss";

@@ -1,0 +1,29 @@
+.toggles-cropped {
+  display: flex;
+  align-items: center;
+  padding: 4px 4px;
+  width: 85px;
+  height: 14px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid $border-grey;
+  box-sizing: border-box;
+
+  &--checked {
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.toggles-cropped__input {
+  appearance: none;
+  display: block;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $green;
+  cursor: pointer;
+}

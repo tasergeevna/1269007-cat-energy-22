@@ -1,0 +1,22 @@
+.social-icon {
+  color: $grey-copyright;
+
+  &:hover,
+  &:focus {
+    color: $green;
+  }
+
+  &:active {
+    color: $green;
+    opacity: 30%;
+  }
+}
+
+.social-icon__path {
+  fill: currentColor;
+
+  &--fb {
+    fill: transparent;
+    stroke: currentColor;
+  }
+}

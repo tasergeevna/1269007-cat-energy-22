@@ -1,0 +1,9 @@
+.page-main__programs {
+  @media (min-width: $tablet-width) {
+    margin-top: -64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}

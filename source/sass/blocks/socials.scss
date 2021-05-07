@@ -1,7 +1,24 @@
 .socials {
   @include reset-list();
+  border-bottom: 1px solid $border-grey;
+  padding: 36px 0 24px 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0;
+  }
 }
 
 .socials__link {
   display: block;
+}
+
+.socials__item {
+  &--vk {
+    margin-left: 72px;
+  }
+
+  &--fb {
+    margin-right: 81px;
+  }
 }

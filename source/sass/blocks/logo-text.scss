@@ -1,4 +1,25 @@
 .logo-text {
   display: flex;
   justify-content: center;
+
+  &--footer {
+    border-bottom: 1px solid $border-grey;
+    padding-bottom: 32px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--footer {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
 }
