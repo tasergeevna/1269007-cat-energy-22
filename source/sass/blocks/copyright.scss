@@ -1,3 +1,11 @@
+.copyright {
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
 .copyright__link {
   color: $darkgrey;
   text-decoration: none;
@@ -14,13 +22,20 @@
 
 .copyright__icon {
   @media (min-width: $tablet-width) {
-    padding-left: 22px;
+    margin-left: 22px;
   }
 }
 
 .copyright__icon path {
+  fill: $grey-copyright;
+
   &:hover,
   &:focus {
     fill: $green;
+  }
+
+  &:active {
+    fill: $green;
+    opacity: 30%;
   }
 }

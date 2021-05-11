@@ -2,11 +2,6 @@
   display: flex;
   justify-content: center;
 
-  &--footer {
-    border-bottom: 1px solid $border-grey;
-    padding-bottom: 32px;
-  }
-
   &:hover,
   &:focus {
     opacity: 80%;

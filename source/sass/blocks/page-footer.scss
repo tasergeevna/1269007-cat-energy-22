@@ -23,12 +23,9 @@
   }
 }
 
-.page-footer__socials-wrapper {
-  margin: -23px 0 20px 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
 }
 
 .page-footer__socials {

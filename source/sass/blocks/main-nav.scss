@@ -2,10 +2,6 @@
   &--closed {
     display: none;
   }
-
-  &--opened {
-    display: block;
-  }
 }
 
 .main-nav__list {
@@ -20,18 +16,16 @@
 
 .main-nav__item {
   padding: 21px 10px 23px 10px;
-  box-sizing: border-box;
   text-align: center;
   position: relative;
 
   &::before {
     @include pseudo;
-    width: 100%;
+    width: 100vw;
     height: 1px;
     background-color: $soft-border-grey;
     top: 0;
-    left: 0;
-    right: 0;
+    left: -$mobile-pads;
   }
 
   @media (min-width: $tablet-width) {

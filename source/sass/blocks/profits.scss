@@ -57,43 +57,32 @@
 
   &::before {
     @include pseudo;
-    width: 60px;
-    height: 60px;
+    @include pseudo-argument(60px, 60px, -2px, -80px);
     background-color: $green;
-    top: -2px;
-    left: -80px;
   }
 
   &--leaf::after {
     background-image: url("../img/icon-leaf.svg");
-    width: 30px;
-    height: 32px;
-    top: 12px;
-    left: -60px;
+
+    @include pseudo-argument(30px, 32px, 12px, -60px);
   }
 
   &--tub::after {
     background-image: url("../img/icon-tub.svg");
-    width: 29px;
-    height: 31px;
-    top: 12px;
-    left: -65px;
+
+    @include pseudo-argument(29px, 31px, 12px, -65px);
   }
 
   &--eat::after {
     background-image: url("../img/icon-eat.svg");
-    width: 25px;
-    height: 30px;
-    top: 12px;
-    left: -65px;
+
+    @include pseudo-argument(25px, 30px, 12px, -65px);
   }
 
   &--alarm::after {
     background-image: url("../img/icon-alarm.svg");
-    width: 32px;
-    height: 33px;
-    top: 12px;
-    left: -65px;
+
+    @include pseudo-argument(32px, 33px, 12px, -65px);
   }
 
   &:last-child {
@@ -103,32 +92,26 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding-top: 111px;
+    max-width: 245px;
 
     &::before {
-      width: 80px;
-      height: 80px;
-      top: -1px;
-      left: 0;
+      @include pseudo-argument(80px, 80px, -1px, 0);
     }
 
     &--leaf::after {
-      top: 27px;
-      left: 27px;
+      @include short-argument(27px, 27px);
     }
 
     &--tub::after {
-      top: 24px;
-      left: 25px;
+      @include short-argument(24px, 25px);
     }
 
     &--eat::after {
-      top: 23px;
-      left: 28px;
+      @include short-argument(23px, 28px);
     }
 
     &--alarm::after {
-      top: 21px;
-      left: 24px;
+      @include short-argument(21px, 24px);
     }
   }
 
@@ -138,42 +121,22 @@
   }
 }
 
-.profits__item br {
-  display: none;
+.profits__text {
+  margin: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.profits__item-number {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
-    font-family: $oswald;
-    font-size: 280px;
-    line-height: 280px;
-    color: $basic-grey;
-    top: -39px;
-    right: 77px;
-    z-index: -1;
-
-    &--first {
-      right: 94px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    right: 2px;
-
-    &--first {
-      right: 17px;
-    }
-
-    &--fourth {
-      right: -3px;
+    &::before {
+      position: absolute;
+      display: block;
+      content: attr(data-number);
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+      bottom: -58px;
+      right: -4px;
+      z-index: -1;
     }
   }
 }

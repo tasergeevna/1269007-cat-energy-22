@@ -1,10 +1,12 @@
 .socials {
   @include reset-list();
   border-bottom: 1px solid $border-grey;
+  border-top: 1px solid $border-grey;
   padding: 36px 0 24px 0;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    border-top: none;
     padding: 0;
   }
 }

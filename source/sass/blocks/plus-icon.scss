@@ -5,11 +5,8 @@
     width: 60px;
     height: 60px;
     position: absolute;
-    bottom: 0;
-    left: 40%;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 30%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
 }

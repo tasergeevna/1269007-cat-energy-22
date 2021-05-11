@@ -77,7 +77,6 @@
 
 .product__pic-link {
   min-height: 112px;
-  box-sizing: border-box;
 }
 
 .product__description {
@@ -118,7 +117,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: auto;
-    padding: 7px 0;
+    padding: 7px 5px;
 
     &--show-more {
       padding: 7px 30px;

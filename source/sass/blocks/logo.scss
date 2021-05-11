@@ -2,9 +2,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &--footer {
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--footer {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .logo__icon {
+  margin-right: 56px;
+
+  &--footer {
+    display: none;
+  }
+
   &:hover,
   &:focus {
     opacity: 80%;

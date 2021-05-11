@@ -1,3 +1,6 @@
+// Глобальные стили
+@import "global.scss";
+
 // Шрифты
 @import "global/fonts.scss";
 
@@ -27,7 +30,6 @@
 @import "blocks/copyright.scss";
 
 // Главная страница
-@import "blocks/page-main.scss";
 @import "blocks/promo.scss";
 @import "blocks/programs-item.scss";
 @import "blocks/programs.scss";
