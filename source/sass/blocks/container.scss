@@ -13,12 +13,15 @@
     padding: 0 $desktop-pads;
 
     &--unset {
-      width: unset;
-      padding: unset;
+      width: auto;
+      padding: 0;
     }
 
-    &--height-100 {
+    &--fullheight {
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
   }
 }

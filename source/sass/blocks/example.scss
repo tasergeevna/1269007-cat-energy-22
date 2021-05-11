@@ -1,11 +1,10 @@
 .example {
   background-color: $grey;
-  padding: 27px 0 31px 0;
+  padding: 27px 0 36px 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-bottom: 64px;
+    padding: 42px 0 64px 0;
     background-color: $white;
     z-index: 0;
     overflow-x: hidden;
@@ -14,7 +13,7 @@
       @include pseudo;
       background-color: $grey;
       width: 100vw;
-      min-height: 462px;
+      min-height: 459px;
       bottom: 0;
       z-index: -1;
     }
@@ -22,12 +21,13 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 70px;
-    background: linear-gradient(to right, $basic-grey 76.7%, $grey 23.3%);
+    padding-bottom: 0;
+    background: $basic-grey;
     justify-content: center;
 
     &::before {
       background-color: $white;
-      min-height: 243px;
+      min-height: 250px;
       top: 0;
       bottom: auto;
     }
@@ -35,9 +35,16 @@
 }
 
 .example__text-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    padding-top: 44px;
+    padding-bottom: 44px;
   }
 }
 
@@ -68,17 +75,17 @@
 
 .example__text {
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 82px;
+    margin-right: 31px;
     margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 431px;
     margin-right: 0;
-    margin-bottom: 84px;
+    margin-bottom: 80px;
   }
 }
 
@@ -91,23 +98,15 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    max-width: 431px;
+    max-width: 366px;
   }
 }
 
 .example__stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 31px;
   margin: 0;
-  margin-bottom: 27px;
-
-  @media (min-width: $tablet-width) {
-    column-gap: 42px;
-  }
+  margin-bottom: 8px;
 
   @media (min-width: $desktop-width) {
-    column-gap: 92px;
     margin-bottom: 55px;
   }
 }
@@ -121,30 +120,30 @@
     flex-direction: column;
     align-content: center;
     text-align: right;
-    margin-bottom: 0;
+    margin-bottom: 24px;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .example__slider {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    position: relative;
     min-width: 708px;
-    min-height: 620px;
+    min-height: 527px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     min-width: 690px;
     min-height: 552px;
   }
@@ -152,6 +151,7 @@
 
 .example__slider-wrapper {
   @media (min-width: $desktop-width) {
-    max-width: 590px;
+    display: flex;
+    position: relative;
   }
 }

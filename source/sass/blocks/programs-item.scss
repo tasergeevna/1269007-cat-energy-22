@@ -1,57 +1,167 @@
 .programs-item {
   background-color: $basic-grey;
-  padding: 30px 32px 18px 20px;
+  padding: 30px 28px 18px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 193px 53px 53px;
+    padding: 77px 272px 53px 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 51px 55px 52px;
+    padding: 77px 51px 53px 52px;
   }
 }
 
 .programs-item__headline {
   margin: 0;
   margin-bottom: 29px;
-  padding-left: 91px;
+  padding-left: 71px;
   font-family: $oswald;
   font-size: 24px;
   line-height: 36px;
   text-transform: uppercase;
   color: $black;
   font-weight: 400;
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    @include pseudo-argument(50px, 50px, -7px, 2px);
+    border-radius: 50%;
+    background-color: $green;
+  }
+
+  &::after {
+    @include pseudo;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--slim::after {
+    background-image: url("../img/icon-cat-slim-cropp.svg");
+
+    @include pseudo-argument(36px, 50px, -9px, 9px);
+  }
+
+  &--strong::after {
+    background-image: url("../img/icon-cat-strong-cropp.svg");
+
+    @include pseudo-argument(67px, 28px, 4px, -5px);
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
     padding-left: 0;
     font-size: 36px;
+
+    &::before {
+      @include pseudo-argument(200px, 200px, 15px, auto);
+      right: -211px;
+    }
+
+    &--slim::after {
+      background-image: url("../img/icon-cat-slim.svg");
+
+      @include pseudo-argument(140px, 192px, 3px, auto);
+      right: -179px;
+    }
+
+    &--strong::after {
+      background-image: url("../img/icon-cat-strong.svg");
+
+      @include pseudo-argument(268px, 112px, 59px, auto);
+      right: -244px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 73px;
-    padding-left: 214px;
+    margin-bottom: 74px;
+    padding-left: 162px;
+
+    &::before {
+      @include pseudo-argument(100px, 100px, -30px, 0);
+      right: auto;
+    }
+
+    &--slim::after {
+      background-image: url("../img/icon-cat-slim-middle.svg");
+
+      @include pseudo-argument(70px, 97px, -34px, 15px);
+      right: auto;
+    }
+
+    &--strong::after {
+      background-image: url("../img/icon-cat-strong-middle.svg");
+
+      @include pseudo-argument(135px, 57px, -9px, -17px);
+      right: auto;
+    }
   }
 }
 
 .programs-item__link {
   margin: 0;
+  padding-right: 50px;
   font-family: $oswald;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
+  position: relative;
+  display: block;
+
+  &::after {
+    @include pseudo;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @include pseudo-argument(24px, 12px, 3px, auto);
+    right: 96px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-image: url("../img/icon-arrow-long.svg");
+    width: 32px;
+  }
+
+  &:active::after {
+    opacity: 30%;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: 9px;
+      right: 220px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 9px;
+      right: 306px;
+    }
   }
 }
 
 .programs-item__text {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
+  padding-bottom: 23px;
   border-bottom: 1px solid $promo-border-grey;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    margin-bottom: 29px;
+    max-width: 342px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6px;
+  }
 }

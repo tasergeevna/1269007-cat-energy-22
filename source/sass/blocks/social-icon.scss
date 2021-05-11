@@ -1,0 +1,13 @@
+.social-icon__path {
+  fill: $grey-copyright;
+
+  &:hover,
+  &:focus {
+    fill: $green;
+  }
+
+  &:active {
+    fill: $green;
+    opacity: 30%;
+  }
+}

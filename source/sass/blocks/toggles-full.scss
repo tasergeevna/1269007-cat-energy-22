@@ -1,0 +1,44 @@
+.toggles-full {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-content: center;
+  }
+}
+
+.toggles-full__scale {
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid $scale-grey;
+    box-sizing: border-box;
+    padding: 2px 0;
+    width: 428px;
+    height: 6px;
+    background-color: $scale-grey;
+  }
+}
+
+.toggles-full__toggle {
+  @media (min-width: $tablet-width) {
+    outline: none;
+    background-color: transparent;
+    margin-left: calc(50% - 17px);
+    width: 34px;
+    height: 34px;
+    background-image: radial-gradient($green 0, $green 4px, $white 5px, $white 100%);
+    border: 1px solid $border-grey;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $green;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

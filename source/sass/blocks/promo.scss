@@ -1,6 +1,4 @@
 .promo {
-  padding-top: 27px;
-
   @media (min-width: $tablet-width) {
     padding-top: 62px;
   }
@@ -11,25 +9,24 @@
 }
 
 .promo__wrapper {
-  min-height: 502px;
+  min-height: 473px;
   position: relative;
   overflow-x: hidden;
-  padding-top: 27px;
+  padding-top: 26px;
 
   &::before {
     @include pseudo;
-    top: -27px;
+    top: -4px;
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    height: 302px;
+    height: 303px;
     background-image: url("../img/index-background-mobile.png"), linear-gradient(to top, $darkgreen, $darkgreen);
     background-position: 50% 0, 0 0;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 872px;
     padding-top: 0;
 
     &::before {
@@ -39,24 +36,33 @@
 
   @media (min-width: $desktop-width) {
     min-height: 635px;
+    padding-left: 87px;
+  }
+}
+
+.promo__text-container {
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 81px;
+    padding-left: 37px;
   }
 }
 
 .promo__inner-wrapper {
-  @media (min-width: $tablet-width) {
-    max-width: 414px;
-  }
-
   @media (min-width: $desktop-width) {
+    max-width: 414px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 75px;
+    column-gap: 42px;
   }
 }
 
 .promo__headline {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   text-align: center;
   font-family: $oswald;
   font-size: 36px;
@@ -67,7 +73,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
+    margin-bottom: 38px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
@@ -93,11 +99,17 @@
     line-height: 20px;
     color: $black;
     margin: 0;
-    margin-bottom: 49px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
+  }
+}
+
+.promo__img-container {
+  @media (min-width: $desktop-width) {
+    margin-left: -87px;
   }
 }
 
@@ -135,14 +147,22 @@
 .promo__button {
   display: block;
   text-align: center;
+  padding: 11px 44px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    max-width: 244px;
+    position: relative;
+    left: 88px;
+    bottom: 589px;
+    z-index: 2;
 
     &--full {
-      position: absolute;
-      top: 230px;
-      z-index: 2;
+      padding: 16px 26px 16px 21px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 37px;
+    bottom: 200px;
   }
 }

@@ -1,17 +1,29 @@
+.page-header {
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
 .page-header--pseudo {
   @media (min-width: $desktop-width) {
     background-image: url("../img/index-background-full.png"), linear-gradient(to left, $darkgreen 50%, $white 50%);
     background-position: 100% 0, 0 0;
     background-repeat: no-repeat;
+    min-height: 694px;
     background-size: contain;
   }
 }
 
-.page-header__logo {
-  margin-bottom: 24px;
+.page-header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
 }
 
@@ -28,6 +40,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
+    padding-top: 59px;
   }
 }

@@ -34,3 +34,9 @@
     display: none;
   }
 }
+
+.nav-toggle--nojs {
+  &--close::after {
+    display: none;
+  }
+}
