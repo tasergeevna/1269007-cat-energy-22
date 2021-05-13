@@ -57,32 +57,32 @@
 
   &::before {
     @include pseudo;
-    @include pseudo-argument(60px, 60px, -2px, -80px);
+    @include pseudo-decorative(60px, 60px, -2px, -80px);
     background-color: $green;
   }
 
   &--leaf::after {
     background-image: url("../img/icon-leaf.svg");
 
-    @include pseudo-argument(30px, 32px, 12px, -60px);
+    @include pseudo-decorative(30px, 32px, 12px, -60px);
   }
 
   &--tub::after {
     background-image: url("../img/icon-tub.svg");
 
-    @include pseudo-argument(29px, 31px, 12px, -65px);
+    @include pseudo-decorative(29px, 31px, 12px, -65px);
   }
 
   &--eat::after {
     background-image: url("../img/icon-eat.svg");
 
-    @include pseudo-argument(25px, 30px, 12px, -65px);
+    @include pseudo-decorative(25px, 30px, 12px, -65px);
   }
 
   &--alarm::after {
     background-image: url("../img/icon-alarm.svg");
 
-    @include pseudo-argument(32px, 33px, 12px, -65px);
+    @include pseudo-decorative(32px, 33px, 12px, -65px);
   }
 
   &:last-child {
@@ -95,23 +95,23 @@
     max-width: 245px;
 
     &::before {
-      @include pseudo-argument(80px, 80px, -1px, 0);
+      @include pseudo-decorative(80px, 80px, -1px, 0);
     }
 
     &--leaf::after {
-      @include short-argument(27px, 27px);
+      @include coordinates(27px, 27px);
     }
 
     &--tub::after {
-      @include short-argument(24px, 25px);
+      @include coordinates(24px, 25px);
     }
 
     &--eat::after {
-      @include short-argument(23px, 28px);
+      @include coordinates(23px, 28px);
     }
 
     &--alarm::after {
-      @include short-argument(21px, 24px);
+      @include coordinates(21px, 24px);
     }
   }
 

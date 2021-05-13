@@ -25,7 +25,7 @@
 
   &::before {
     @include pseudo;
-    @include pseudo-argument(50px, 50px, -7px, 2px);
+    @include pseudo-decorative(50px, 50px, -7px, 2px);
     border-radius: 50%;
     background-color: $green;
   }
@@ -39,13 +39,13 @@
   &--slim::after {
     background-image: url("../img/icon-cat-slim-cropp.svg");
 
-    @include pseudo-argument(36px, 50px, -9px, 9px);
+    @include pseudo-decorative(36px, 50px, -9px, 9px);
   }
 
   &--strong::after {
     background-image: url("../img/icon-cat-strong-cropp.svg");
 
-    @include pseudo-argument(67px, 28px, 4px, -5px);
+    @include pseudo-decorative(67px, 28px, 4px, -5px);
   }
 
   @media (min-width: $tablet-width) {
@@ -54,21 +54,21 @@
     font-size: 36px;
 
     &::before {
-      @include pseudo-argument(200px, 200px, 15px, auto);
+      @include pseudo-decorative(200px, 200px, 15px, auto);
       right: -211px;
     }
 
     &--slim::after {
       background-image: url("../img/icon-cat-slim.svg");
 
-      @include pseudo-argument(140px, 192px, 3px, auto);
+      @include pseudo-decorative(140px, 192px, 3px, auto);
       right: -179px;
     }
 
     &--strong::after {
       background-image: url("../img/icon-cat-strong.svg");
 
-      @include pseudo-argument(268px, 112px, 59px, auto);
+      @include pseudo-decorative(268px, 112px, 59px, auto);
       right: -244px;
     }
   }
@@ -79,21 +79,21 @@
     padding-left: 162px;
 
     &::before {
-      @include pseudo-argument(100px, 100px, -30px, 0);
+      @include pseudo-decorative(100px, 100px, -30px, 0);
       right: auto;
     }
 
     &--slim::after {
       background-image: url("../img/icon-cat-slim-middle.svg");
 
-      @include pseudo-argument(70px, 97px, -34px, 15px);
+      @include pseudo-decorative(70px, 97px, -34px, 15px);
       right: auto;
     }
 
     &--strong::after {
       background-image: url("../img/icon-cat-strong-middle.svg");
 
-      @include pseudo-argument(135px, 57px, -9px, -17px);
+      @include pseudo-decorative(135px, 57px, -9px, -17px);
       right: auto;
     }
   }
@@ -117,7 +117,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 
-    @include pseudo-argument(24px, 12px, 3px, auto);
+    @include pseudo-decorative(24px, 12px, 3px, auto);
     right: 96px;
   }
 

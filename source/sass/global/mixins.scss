@@ -10,14 +10,14 @@
   position: $pos;
 }
 
-@mixin pseudo-argument($width, $height, $top, $left) {
+@mixin pseudo-decorative($width, $height, $top, $left) {
   width: $width;
   height: $height;
   top: $top;
   left: $left;
 }
 
-@mixin short-argument ($top, $left) {
+@mixin coordinates($top, $left) {
   top: $top;
   left: $left;
 }

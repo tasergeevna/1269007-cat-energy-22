@@ -1,6 +1,10 @@
 .page-header {
   padding-bottom: 22px;
 
+  &--form {
+    padding-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }

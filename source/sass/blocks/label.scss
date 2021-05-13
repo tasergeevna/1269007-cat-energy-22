@@ -7,14 +7,6 @@
   display: inline-block;
   white-space: nowrap;
 
-  &--radio {
-    padding-left: 15px;
-  }
-
-  &--checkbox {
-    padding-left: 16px;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
