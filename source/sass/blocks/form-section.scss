@@ -1,6 +1,40 @@
 .form-section {
   border: none;
 
+  &--progremm {
+    position: relative;
+  }
+
+  &--programm::before {
+    @include pseudo;
+    width: 100vw;
+    height: 1px;
+    bottom: 290px;
+    left: -$mobile-pads;
+    background-color: $border-grey;
+  }
+
+  &--programm::after {
+    @include pseudo;
+    width: 100vw;
+    height: 1px;
+    bottom: 126px;
+    left: -$mobile-pads;
+    background-color: $border-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--programm {
+      border: 1px solid $form-border-grey;
+      padding: 25px 0 25px 29px;
+    }
+
+    &--programm::before,
+    &--programm::after {
+      display: none;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &--programm {
       padding: 25px 28px;
@@ -71,4 +105,8 @@
   display: flex;
   align-items: center;
   column-gap: 13px;
+
+  &--contacts {
+    position: relative;
+  }
 }

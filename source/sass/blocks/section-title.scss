@@ -3,9 +3,24 @@
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+  background-color: $white;
+  padding-right: 14px;
 
   &--column {
-    max-width: 187px;
+    max-width: 197px;
+  }
+
+  &--border {
+    position: relative;
+  }
+
+  &--border::after {
+    @include pseudo;
+    width: 100vw;
+    height: 2px;
+    top: 15px;
+    right: calc(-100vw - 25px);
+    background-color: $green;
   }
 
   @media (min-width: $tablet-width) {
@@ -14,6 +29,19 @@
 
     &--column {
       max-width: unset;
+    }
+
+    &--border::after {
+      top: 22px;
+    }
+
+    &--border::before {
+      @include pseudo;
+      width: 100vw;
+      height: 2px;
+      top: 22px;
+      left: calc(-100vw - 25px);
+      background-color: $green;
     }
   }
 }
