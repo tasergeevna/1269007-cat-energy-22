@@ -1,7 +1,7 @@
 .form-section {
   border: none;
 
-  &--progremm {
+  &--programm {
     position: relative;
   }
 
@@ -9,17 +9,14 @@
     @include pseudo;
     width: 100vw;
     height: 1px;
-    bottom: 290px;
+    bottom: 147px;
     left: -$mobile-pads;
     background-color: $border-grey;
   }
 
   &--programm::after {
     @include pseudo;
-    width: 100vw;
-    height: 1px;
-    bottom: 126px;
-    left: -$mobile-pads;
+    @include pseudo-decorative(100vw, 1px, -27px, -$mobile-pads);
     background-color: $border-grey;
   }
 
@@ -40,6 +37,46 @@
       padding: 25px 28px;
     }
   }
+}
+
+.form-section__input:active + .form-section__icon,
+.form-section__input:focus + .form-section__icon {
+  stroke: $green;
+}
+
+.form-section__input:active:invalid + .form-section__icon,
+.form-section__input:focus:invalid + .form-section__icon,
+.invalid + .form-section__icon {
+  stroke: $red;
+}
+
+.form-section__input:disabled + .form-section__label,
+.form-section__label.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.form-section__input:focus + .form-section__label::before {
+  border-color: $darkgrey;
+  box-shadow: inset 0 0 0 1px $darkgrey;
+}
+
+.form-section__input--radio:checked + .form-section__label--radio::before {
+  background-image: radial-gradient($green 0, $green 6px, $white 7px, $white 100%);
+
+  @media (min-width: $tablet-width) {
+    background-image: radial-gradient($green 0, $green 9px, $white 10px, $white 100%);
+  }
+}
+
+.form-section__label--checkbox:active::before,
+.form-section__input--checkbox:checked + .form-section__label--checkbox::before {
+  background: url("../img/icon-tick.svg") no-repeat center;
+  background-size: 21px;
+}
+
+.form-section__input--checkbox:checked + .form-section__label--checkbox:active::before {
+  background-image: none;
 }
 
 .form-section__list {

@@ -54,6 +54,10 @@
       right: 0;
       bottom: 0;
     }
+
+    &--final::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

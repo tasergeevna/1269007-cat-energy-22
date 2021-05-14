@@ -8,15 +8,4 @@
     top: calc(50% - 10px);
     right: 13px;
   }
-
-  .form-input:active + &,
-  .form-input:focus + & {
-    stroke: $green;
-  }
-
-  .form-input:active:invalid + &,
-  .form-input:focus:invalid + &,
-  .invalid + & {
-    stroke: $red;
-  }
 }

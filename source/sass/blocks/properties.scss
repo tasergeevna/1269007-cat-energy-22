@@ -47,6 +47,7 @@
 
   &--show-more {
     margin-bottom: 21px;
+    text-align: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -55,7 +56,7 @@
     &--show-more {
       text-align: center;
       padding-bottom: 0;
-      margin-bottom: 101px;
+      margin-bottom: 52px;
     }
   }
 }
