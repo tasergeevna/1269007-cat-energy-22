@@ -50,31 +50,31 @@
             <div class="form__outer-wrapper">
               <fieldset class="form__section form__section--vertical-grid form-section">
                 <div class="form-section__row">
-                  <label class="label" for="cat-name">Имя:*</label>
-                  <input class="form-input form-input--required" type="text" id="cat-name" placeholder="Барсик" maxlength="17">
+                  <label class="form-section__label label" for="cat-name">Имя:*</label>
+                  <input class="form-section__input form-input form-input--required" type="text" id="cat-name" name="name" placeholder="Барсик">
                 </div>
                 <div class="form-section__row">
-                  <label class="label" for="cat-weight">Вес (кг):*</label>
-                  <input class="form-input form-input--required" type="text" id="cat-weight" placeholder="7" maxlength="2">
+                  <label class="form-section__label label" for="cat-weight">Вес (кг):*</label>
+                  <input class="form-section__input form-input form-input--required" type="text" id="cat-weight" name="weight" placeholder="7">
                 </div>
                 <div class="form-section__row">
-                  <label class="label" for="cat-age">Возраст (лет):</label>
-                  <input class="form-input" type="text" id="cat-age" placeholder="7" maxlength="3">
+                  <label class="form-section__label label" for="cat-age">Возраст (лет):</label>
+                  <input class="form-section__input form-input" type="text" id="cat-age" name="age" placeholder="7">
                 </div>
               </fieldset>
               <fieldset class="form__section form-section form-section--programm">
                 <ul class="form-section__list form-section__list--programm">
                   <li class="form-section__item">
-                    <input class="form-input form-input--radio visually-hidden" type="radio" id="lose-weight" name="programme" checked>
-                    <label class="label label--radio" for="lose-weight">Похудение</label>
+                    <input class="form-section__input form-section__input--radio form-input form-input--radio visually-hidden" type="radio" id="lose-weight" name="programm" checked>
+                    <label class="form-section__label form-section__label--radio label label--radio" for="lose-weight">Похудение</label>
                   </li>
                   <li class="form-section__item">
-                    <input class="form-input form-input--radio visually-hidden" type="radio" id="plus-weight" name="programme">
-                    <label class="label label--radio" for="plus-weight">Набор массы</label>
+                    <input class="form-section__input form-section__input--radio form-input form-input--radio visually-hidden" type="radio" id="plus-weight" name="programm">
+                    <label class="form-section__label form-section__label--radio label label--radio" for="plus-weight">Набор массы</label>
                   </li>
                   <li class="form-section__item">
-                    <input class="form-input form-input--radio visually-hidden" type="radio" id="need-advice" name="programme">
-                    <label class="label label--radio" for="need-advice">Не знаю (нужен ваш совет)</label>
+                    <input class="form-section__input form-section__input--radio form-input form-input--radio visually-hidden" type="radio" id="need-advice" name="programm">
+                    <label class="form-section__label form-section__label--radio label label--radio" for="need-advice">Не знаю (нужен ваш совет)</label>
                   </li>
                 </ul>
               </fieldset>
@@ -83,9 +83,9 @@
               <legend class="form-section__title section-title section-title--column section-title--border">Контактные данные (владельца кота)</legend>
               <div class="form-section__wrapper">
                 <div class="form-section__row form-section__row--contacts">
-                  <label class="label" for="email">E-mail:*</label>
-                  <input class="form-input form-input--required form-input--contacts" type="text" id="email" placeholder="kuklachev@gmail.com">
-                  <svg class="form-icon" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <label class="form-section__label label" for="email">E-mail:*</label>
+                  <input class="form-section__input form-input form-input--required form-input--contacts" type="text" id="email" name="email" placeholder="kuklachev@gmail.com">
+                  <svg class="form-section__icon form-icon" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="1.65" y1="5.84766" x2="1.65" y2="13.8477" stroke-width="1.3"/>
                     <line x1="18.65" y1="5.84766" x2="18.65" y2="13.8477" stroke-width="1.3"/>
                     <line x1="1" y1="13.1977" x2="19" y2="13.1977" stroke-width="1.3"/>
@@ -94,9 +94,9 @@
                   </svg>
                 </div>
                 <div class="form-section__row form-section__row--contacts">
-                  <label class="label" for="phone">Телефон:*</label>
-                  <input class="form-input form-input--required form-input--contacts" type="text" id="phone" placeholder="8 (960) 900-60-90">
-                  <svg  class="form-icon form-icon--phone" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <label class="form-section__label label" for="phone">Телефон:*</label>
+                  <input class="form-section__input form-input form-input--required form-input--contacts" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                  <svg  class="form-section__icon form-icon form-icon--phone" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
                     <path d="M17.9 9.75275H9.39999V10.9569H17.9L15.8 13.0641L16.7 13.9672L19.8 10.8565C19.8974 10.7263 19.95 10.5678 19.95 10.405C19.95 10.2421 19.8974 10.0837 19.8 9.95344L16.7 6.84277L15.8 7.74587L17.9 9.75275Z"/>
                     <path d="M8.10001 19.7872V13.5659C8.08846 13.41 8.02154 13.2635 7.91142 13.153C7.80131 13.0425 7.65531 12.9754 7.50001 12.9638H3.10001C3.10516 13.2815 3.23325 13.5848 3.45718 13.8095C3.68112 14.0342 3.98336 14.1627 4.30001 14.1679H6.80001V19.1851H3.10001C2.86326 19.2 2.62591 19.1676 2.40176 19.0896C2.17762 19.0117 1.97115 18.8898 1.79436 18.7311C1.61757 18.5723 1.47399 18.3799 1.37196 18.165C1.26992 17.9501 1.21148 17.717 1.20001 17.4793V3.43111C1.19181 2.96681 1.36516 2.51774 1.68292 2.18013C2.00069 1.84252 2.43758 1.64322 2.90001 1.62492H6.80001V6.64212H4.40001C4.08336 6.64729 3.78112 6.77581 3.55718 7.00052C3.33325 7.22523 3.20516 7.52851 3.20001 7.84625H7.60001C7.75531 7.83466 7.90131 7.76751 8.01142 7.65701C8.12154 7.54651 8.18846 7.40002 8.20001 7.24418V0.922517C8.15232 0.76584 8.06117 0.626022 7.93721 0.519407C7.81325 0.412792 7.66161 0.343785 7.50001 0.320453H3.10001C2.70599 0.307054 2.31321 0.371716 1.94411 0.510744C1.57501 0.649771 1.23684 0.860436 0.948933 1.13069C0.661026 1.40095 0.42903 1.7255 0.266207 2.08579C0.103385 2.44608 0.01293 2.83504 1.46306e-05 3.23043V17.1782C-0.0289644 17.5773 0.0246504 17.978 0.157487 18.3552C0.290324 18.7324 0.499509 19.078 0.771886 19.3701C1.04426 19.6623 1.37394 19.8947 1.74019 20.0529C2.10643 20.211 2.50132 20.2913 2.90001 20.2889H7.50001C7.5735 20.304 7.64943 20.3022 7.72216 20.2839C7.7949 20.2655 7.86259 20.2309 7.92021 20.1828C7.97783 20.1346 8.02391 20.074 8.05504 20.0055C8.08616 19.9371 8.10153 19.8624 8.10001 19.7872Z"/>
@@ -114,27 +114,27 @@
               <legend class="form-section__title section-title section-title--border">Комментарий</legend>
               <div class="form-section__column">
                 <label class="visually-hidden" for="feedback"></label>
-                <textarea class="form-input form-input--textarea" id="feedback" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="form-section__input form-input form-input--textarea" id="feedback" name="name" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
             <fieldset class="form__section form__section--last form-section">
               <legend class="form-section__title form-section__title--short-indent section-title section-title--border">Дополнительно</legend>
               <ul class="form-section__list">
                 <li class="form-section__item form-section__item--checkbox">
-                  <input class="form-input form-input--checkbox visually-hidden" type="checkbox" id="sweetener" name="supplements" checked>
-                  <label class="label label--checkbox" for="sweetener">Сахарозаменитель</label>
+                  <input class="form-section__input form-section__input--checkbox form-input form-input--checkbox visually-hidden" type="checkbox" id="sweetener" name="supplements" checked>
+                  <label class="form-section__label form-section__label--checkbox label label--checkbox" for="sweetener">Сахарозаменитель</label>
                 </li>
                 <li class="form-section__item form-section__item--checkbox">
-                  <input class="form-input form-input--checkbox visually-hidden" type="checkbox" id="water" name="supplements">
-                  <label class="label label--checkbox" for="water">Питьевая вода</label>
+                  <input class="form-section__input form-section__input--checkbox form-input form-input--checkbox visually-hidden" type="checkbox" id="water" name="supplements">
+                  <label class="form-section__label form-section__label--checkbox label label--checkbox" for="water">Питьевая вода</label>
                 </li>
                 <li class="form-section__item form-section__item--checkbox">
-                  <input class="form-input form-input--checkbox visually-hidden" type="checkbox" id="milk" name="supplements">
-                  <label class="label label--checkbox" for="milk">Молоко</label>
+                  <input class="form-section__input form-section__input--checkbox form-input form-input--checkbox visually-hidden" type="checkbox" id="milk" name="supplements">
+                  <label class="form-section__label form-section__label--checkbox label label--checkbox" for="milk">Молоко</label>
                 </li>
                 <li class="form-section__item form-section__item--checkbox">
-                  <input class="form-input form-input--checkbox visually-hidden" type="checkbox" id="vitamins" name="supplements" disabled>
-                  <label class="label label--checkbox" for="vitamins">Витамины</label>
+                  <input class="form-section__input form-section__input--checkbox form-input form-input--checkbox visually-hidden" type="checkbox" id="vitamins" name="supplements" disabled>
+                  <label class="form-section__label form-section__label--checkbox label label--checkbox" for="vitamins">Витамины</label>
                 </li>
               </ul>
             </fieldset>

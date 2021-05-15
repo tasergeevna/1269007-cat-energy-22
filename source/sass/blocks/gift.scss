@@ -1,8 +1,25 @@
 .gift {
   padding-bottom: 35px;
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    width: 78px;
+    height: 80px;
+    top: 58px;
+    left: calc(50% - 39px);
+    background-image: url("../img/icon-gift.svg");
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 76px;
+
+    &::before {
+      width: 80px;
+      height: 82px;
+      top: 100px;
+      left: 260px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -10,5 +27,12 @@
     padding-bottom: 0;
     grid-column: 4/5;
     position: relative;
+
+    &::before {
+      width: 80px;
+      height: 82px;
+      top: 197px;
+      left: calc(50% - 41px);
+    }
   }
 }

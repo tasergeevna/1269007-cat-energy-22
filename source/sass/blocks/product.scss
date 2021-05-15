@@ -1,11 +1,38 @@
 .product {
   padding: 0 36px 40px 36px;
+  position: relative;
 
   &--show-more {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
+  }
+
+  &--additional {
+    padding-top: 13px;
     padding-bottom: 0;
+    border-top: 1px solid $border-grey;
+  }
+
+  &--additional:last-child {
+    border-bottom: 1px solid $border-grey;
+    padding-bottom: 18px;
+  }
+
+  &--main::before {
+    @include pseudo;
+    @include pseudo-decorative(100vw, 1px, -27px, -$mobile-pads);
+    background-color: $border-grey;
+  }
+
+  &--main:last-child::after {
+    @include pseudo;
+    width: 100vw;
+    height: 1px;
+    bottom: -27px;
+    left: -$mobile-pads;
+    background-color: $border-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -17,6 +44,21 @@
       background-color: $white;
       padding-bottom: 40px;
     }
+
+    &--main::before {
+      display: none;
+    }
+
+    &--main:last-child::after {
+      display: none;
+    }
+
+    &--show-more {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +68,20 @@
       grid-template-columns: repeat(3, 1fr);
       column-gap: 80px;
     }
+  }
+}
+
+.product__border-wrapper {
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+    max-height: 465px;
+    border: 1px solid $border-grey;
+    padding: 0 36px 40px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 450px;
+    padding: 0 34px 40px 34px;
   }
 }
 
