@@ -17,6 +17,10 @@
     background-repeat: no-repeat;
     min-height: 694px;
     background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-full@2x.png"), linear-gradient(to left, $darkgreen 50%, $white 50%);
+    }
   }
 }
 

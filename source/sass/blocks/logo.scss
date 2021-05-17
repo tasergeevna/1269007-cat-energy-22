@@ -16,6 +16,8 @@
 
 .logo__icon {
   margin-right: 56px;
+  width: 34px;
+  height: 38px;
 
   &--footer {
     display: none;
@@ -31,11 +33,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 12px;
+    margin-right: 0;
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 14px;
+    width: 202px;
+    height: 59px;
   }
 }
 
