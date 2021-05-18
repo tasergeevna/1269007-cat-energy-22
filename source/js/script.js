@@ -9,5 +9,8 @@ navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
     navToggle.classList.remove('nav-toggle--closed');
     navToggle.classList.add('nav-toggle--hamburger');
+  } else {
+    navToggle.classList.remove('nav-toggle--hamburger');
+    navToggle.classList.add('nav-toggle--closed');
   };
 });

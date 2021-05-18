@@ -11,9 +11,13 @@
       <div class="container">
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo logo" href="index.html" aria-label="Перейти на главную страницу">
-              <img class="logo__icon" src="img/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy в виде котенка в супергеройском плаще">
-              <img class="logo__text logo-text" src="img/logo-text.svg" width="101" height="18" alt="Функциональное питание для котов Cat Energy">
+            <a class="page-header__logo logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-tablet-icon.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-icon.svg">
+                <img class="logo__icon" src="img/logo-mobile-icon.svg" alt="Логотип Cat Energy в виде котенка в супергеройском плаще">
+              </picture>
+              <img class="logo__text logo-text logo-text--header" src="img/logo-text.svg" width="101" height="18" alt="Функциональное питание для котов Cat Energy">
             </a>
             <button class="nav-toggle nav-toggle--close nav-toggle--nojs" type="button">
               <span class="visually-hidden">Открыть меню</span>

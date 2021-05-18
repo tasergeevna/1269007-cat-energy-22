@@ -26,6 +26,10 @@
     background-repeat: no-repeat;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background@2x.png"), linear-gradient(to top, $darkgreen, $darkgreen);
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 810px;
     padding-top: 0;
@@ -121,31 +125,17 @@
 .promo__pic {
   position: relative;
   z-index: 2;
+  width: 280px;
+  height: 270px;
 
-  &--mobile {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
   }
 
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
   }
 }
 

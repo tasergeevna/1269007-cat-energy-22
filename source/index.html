@@ -12,8 +12,12 @@
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo logo">
-              <img class="logo__icon" src="img/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy в виде котенка в супергеройском плаще">
-              <img class="logo__text logo-text" src="img/logo-text.svg" width="101" height="18" alt="Функциональное питание для котов Cat Energy">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-tablet-icon.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-icon.svg">
+                <img class="logo__icon" src="img/logo-mobile-icon.svg" alt="Логотип Cat Energy в виде котенка в супергеройском плаще">
+              </picture>
+              <img class="logo__text logo-text logo-text--header" src="img/logo-text.svg" width="101" height="18" alt="Функциональное питание для котов Cat Energy">
             </a>
             <button class="nav-toggle nav-toggle--close nav-toggle--nojs" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -21,7 +25,7 @@
           </div>
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current-main">
+              <li class="main-nav__item main-nav__item--current main-nav__item--current-main">
                 <a class="main-nav__link main-nav__link--light main-nav__link--current">
                   Главная
                 </a>
@@ -47,10 +51,13 @@
               <div class="promo__text-container">
                 <h1 class="promo__headline">Функциональное<br> питание для котов</h1>
                 <p class="promo__slogan">Занялся собой? Займись котом!</p>
+              </div>
               <div class="promo__img-container">
-                <img class="promo__pic promo__pic--mobile" src="img/promo-can-pic.png" width="280" height="270" alt="Банка питания Cat Energy с курицей">
-                <img class="promo__pic promo__pic--tablet" src="img/promo-can-full.png" width="709" height="609" alt="Банка питания Cat Energy с курицей">
-                <img class="promo__pic promo__pic--desktop" src="img/promo-can-desktop.png" width="552" height="499" alt="Банка питания Cat Energy с курицей">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/promo-can-desktop.png 1x, img/promo-can-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/promo-can-full.png 1x, img/promo-can-full@2x.png 2x">
+                  <img class="promo__pic promo__pic--mobile" src="img/promo-can-pic.png" srcset="img/promo-can@2x.png 2x" alt="Банка питания Cat Energy с курицей">
+                </picture>
               </div>
               <a class="promo__button promo__button--full button" aria-label="Перейти на страницу каталога">Подобрать программу</a>
             </div>
@@ -123,13 +130,13 @@
             </div>
             <div class="example__slider-wrapper slider">
               <div class="example__slider">
-                <img class="slider__pic slider__pic--cropp slider__pic--before" src="img/before-mobile.png" width="311" height="232" alt="Толстый пушистый двухцветный кот">
-                <img class="slider__pic slider__pic--cropp slider__pic--after display-none" src="img/after-mobile.png" width="251" height="240" alt="Стройный пушистый двухцветный кот">
+                <img class="slider__pic slider__pic--cropp slider__pic--cropp-before slider__pic--before" src="img/before-mobile.png" srcset="img/before-mobile@2x 2x" alt="Толстый пушистый двухцветный кот">
+                <img class="slider__pic slider__pic--cropp slider__pic--cropp-after slider__pic--after display-none" src="img/after-mobile.png" srcset="img/after-mobile@2x 2x" alt="Стройный пушистый двухцветный кот">
                 <div class="slider__pic-wrapper slider__pic-wrapper--before">
-                  <img class="slider__pic slider__pic--full slider__pic--before" src="img/before-tablet.png" width="677" height="520" alt="Толстый пушистый двухцветный кот">
+                  <img class="slider__pic slider__pic--full slider__pic--full-before slider__pic--before" src="img/before-tablet.png" srcset="img/before-tablet@2x.png" alt="Толстый пушистый двухцветный кот">
                 </div>
                 <div class="slider__pic-wrapper slider__pic-wrapper--after">
-                  <img class="slider__pic slider__pic--full slider__pic--after" src="img/after-tablet.png" width="545" height="520" alt="Стройный пушистый двухцветный кот">
+                  <img class="slider__pic slider__pic--full slider__pic--full-after slider__pic--after" src="img/after-tablet.png" srcset="img/after-tablet@2x.png" alt="Стройный пушистый двухцветный кот">
                 </div>
               </div>
               <div class="slider__toggles">

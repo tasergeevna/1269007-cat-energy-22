@@ -9,7 +9,7 @@
     @include pseudo;
     width: 100vw;
     height: 1px;
-    bottom: 147px;
+    bottom: -27px;
     left: -$mobile-pads;
     background-color: $border-grey;
   }
@@ -45,8 +45,7 @@
 }
 
 .form-section__input:active:invalid + .form-section__icon,
-.form-section__input:focus:invalid + .form-section__icon,
-.invalid + .form-section__icon {
+.form-section__input:focus:invalid + .form-section__icon {
   stroke: $red;
 }
 
