@@ -78,7 +78,7 @@
 .product__border-wrapper {
   @media (min-width: $tablet-width) {
     max-width: 324px;
-    height: 90%;
+    height: calc(100% - 10%);
     border: 2px solid $border-grey;
     padding: 0 36px 40px 36px;
   }
@@ -113,12 +113,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding-bottom: 10px;
 
-  &--small {
-    padding-bottom: 10px;
-  }
-
-  &--big {
+  &:nth-child(2n) {
     padding-bottom: 20px;
   }
 
@@ -128,17 +125,14 @@
     min-height: 200px;
     margin-bottom: 27px;
     position: relative;
+    padding-bottom: 0;
 
     &--plus {
       min-height: 178px;
       margin-bottom: 0;
     }
 
-    &--small {
-      padding-bottom: 0;
-    }
-
-    &--big {
+    &:nth-child(2n) {
       padding-bottom: 0;
     }
   }
