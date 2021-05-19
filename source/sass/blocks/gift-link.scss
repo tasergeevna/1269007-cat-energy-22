@@ -10,7 +10,7 @@
   justify-content: flex-end;
   align-content: center;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina) {
     background-image: url("../img/gift-background@2x.png");
   }
 

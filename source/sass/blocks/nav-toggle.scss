@@ -6,10 +6,10 @@
   padding: 15px 15px;
   cursor: pointer;
 
-  &--hamburder {
+  &--hamburger {
     &::after {
       @include pseudo;
-      box-shadow: 0 2px $black, 0 7px $black, 0 13px $black;
+      box-shadow: 0 2px $black, 0 8px $black, 0 14px $black;
       width: 24px;
       height: 2px;
       bottom: 20px;
