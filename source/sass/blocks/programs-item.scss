@@ -1,9 +1,9 @@
 .programs-item {
   background-color: $basic-grey;
-  padding: 30px 28px 18px 20px;
+  padding: 31px 28px 18px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 272px 53px 53px;
+    padding: 77px 272px 56px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,24 +76,24 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-bottom: 74px;
-    padding-left: 162px;
+    padding-left: 180px;
 
     &::before {
-      @include pseudo-decorative(100px, 100px, -30px, 0);
+      @include pseudo-decorative(100px, 100px, -30px, 19px);
       right: auto;
     }
 
     &--slim::after {
       background-image: url("../img/icon-cat-slim-middle.svg");
 
-      @include pseudo-decorative(70px, 97px, -34px, 15px);
+      @include pseudo-decorative(70px, 97px, -34px, 33px);
       right: auto;
     }
 
     &--strong::after {
       background-image: url("../img/icon-cat-strong-middle.svg");
 
-      @include pseudo-decorative(135px, 57px, -9px, -17px);
+      @include pseudo-decorative(135px, 57px, -9px, 1px);
       right: auto;
     }
   }

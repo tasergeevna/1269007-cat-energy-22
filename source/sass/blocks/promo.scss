@@ -1,6 +1,6 @@
 .promo {
   @media (min-width: $tablet-width) {
-    padding-top: 62px;
+    padding-top: 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,7 +11,7 @@
 .promo__wrapper {
   min-height: 473px;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   padding-top: 26px;
 
   &::before {
@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 816px;
+    min-height: 809px;
     padding-top: 0;
 
     &::before {
@@ -40,13 +40,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 635px;
+    min-height: 538px;
   }
 }
 
 .promo__text-container {
   @media (min-width: $desktop-width) {
-    padding-top: 81px;
+    padding-top: 72px;
   }
 }
 
@@ -59,6 +59,7 @@
     display: flex;
     flex-direction: column;
     max-width: 390px;
+    padding-left: 100px;
   }
 }
 
@@ -101,7 +102,7 @@
     line-height: 20px;
     color: $black;
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,11 +114,15 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
+    left: 27px;
+    bottom: -5px;
   }
 
   @media (min-width: $desktop-width) {
+    left: auto;
+    bottom: auto;
     top: 0;
-    right: 407px;
+    right: 288px;
     z-index: 1;
   }
 }
@@ -148,7 +153,7 @@
     max-width: 244px;
 
     &--full {
-      padding: 16px 26px 16px 21px;
+      padding: 16px 26px 16px 18px;
     }
   }
 }

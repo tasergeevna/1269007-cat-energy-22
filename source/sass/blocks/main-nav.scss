@@ -12,6 +12,10 @@
     grid-template-columns: repeat(3, auto);
     column-gap: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 25px;
+  }
 }
 
 .main-nav__item {
