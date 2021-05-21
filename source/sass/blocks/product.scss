@@ -78,7 +78,7 @@
 .product__border-wrapper {
   @media (min-width: $tablet-width) {
     max-width: 324px;
-    height: calc(100% - 10%);
+    height: 90%;
     border: 2px solid $border-grey;
     padding: 0 36px 40px 36px;
   }
