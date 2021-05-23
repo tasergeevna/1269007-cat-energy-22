@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     column-gap: 35px;
+    row-gap: 10px;
   }
 }
 
@@ -47,7 +48,7 @@
 
     &--current::before {
       @include pseudo;
-      @include pseudo-decorative(auto, 2px, 30px, 0);
+      @include pseudo-decorative(auto, 2px, 37px, 0);
 
       background-color: $green;
       right: 0;

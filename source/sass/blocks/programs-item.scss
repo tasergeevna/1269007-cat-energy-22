@@ -117,8 +117,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 
-    @include pseudo-decorative(24px, 12px, 0, auto);
-    right: 107px;
+    @include pseudo-decorative(24px, 12px, 0, 140px);
   }
 
   &:hover::after,
