@@ -5,7 +5,7 @@
   line-height: 18px;
   color: $darkgrey;
   text-transform: uppercase;
-  padding: 13px 5px 13px 15px;
+  padding: 13px 5px 13px 13px;
   box-sizing: border-box;
   width: 100%;
 
@@ -38,7 +38,7 @@
   }
 
   &--textarea {
-    padding: 9px 10px 10px 15px;
+    padding: 11px 10px 10px 14px;
     margin: 0;
     width: 100%;
     min-height: 150px;
@@ -49,6 +49,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 14px 5px 13px 21px;
+
+    &--contacts {
+      padding-left: 26px;
+    }
 
     &--textarea {
       min-height: 174px;
@@ -59,5 +64,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 10px 10px 20px;
+
+    &--contacts {
+      padding-left: 26px;
+    }
   }
 }

@@ -19,6 +19,7 @@
     flex-direction: row;
     align-items: center;
     padding-right: 124px;
+    min-height: 200px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,6 +30,7 @@
     align-content: center;
     background-size: cover;
     width: 100%;
+    min-height: 290px;
   }
 }
 
@@ -38,14 +40,15 @@
   line-height: 20px;
   color: $white;
   text-align: center;
-  padding: 128px 71px 43px 71px;
+  padding: 128px 41px 41px 55px;
+  max-width: 278px;
   position: relative;
 
   &::before {
     @include pseudo;
     width: 78px;
     height: 80px;
-    bottom: 141px;
+    bottom: 149px;
     left: calc(50% - 39px);
     background-image: url("../img/icon-gift.svg");
   }
@@ -60,7 +63,7 @@
       height: 82px;
       bottom: -7px;
       left: auto;
-      right: 443px;
+      right: 425px;
     }
   }
 

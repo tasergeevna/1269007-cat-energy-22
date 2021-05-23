@@ -19,7 +19,7 @@
     width: 100vw;
     height: 2px;
     top: 15px;
-    right: calc(-100vw - 25px);
+    right: calc(-100vw - 3px);
     background-color: $green;
   }
 
@@ -48,28 +48,40 @@
       @include pseudo;
       width: 100vw;
       height: 2px;
-      top: 22px;
-      left: calc(-100vw - 25px);
+      top: 24px;
+      left: -100vw;
       background-color: $green;
     }
 
     &--border-additional::after {
-      right: calc(-100vw + 222px);
+      right: calc(-100vw + 297px);
     }
 
     &--border-additional::before {
       @include pseudo;
       width: 100vw;
       height: 2px;
-      top: 22px;
+      top: 24px;
       left: calc(-100vw - 36px);
       background-color: $green;
     }
   }
 
   @media (min-width: $desktop-width) {
+    &--border-catalog::after {
+      right: calc(-100vw - 27px);
+    }
+
+    &--border-catalog::before {
+      left: calc(-100vw - 20px);
+    }
+
     &--border-additional::after {
-      right: calc(-100vw + 500px);
+      right: calc(-100vw + 567px);
+    }
+
+    &--border-additional::before {
+      left: calc(-100vw + 50px);
     }
   }
 }

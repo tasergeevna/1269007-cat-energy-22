@@ -45,7 +45,7 @@
   &--strong::after {
     background-image: url("../img/icon-cat-strong-cropp.svg");
 
-    @include pseudo-decorative(67px, 28px, 4px, -5px);
+    @include pseudo-decorative(67px, 28px, 4px, -7px);
   }
 
   @media (min-width: $tablet-width) {
@@ -76,24 +76,24 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-bottom: 74px;
-    padding-left: 180px;
+    padding-left: 163px;
 
     &::before {
-      @include pseudo-decorative(100px, 100px, -30px, 19px);
+      @include pseudo-decorative(100px, 100px, -30px, 1px);
       right: auto;
     }
 
     &--slim::after {
       background-image: url("../img/icon-cat-slim-middle.svg");
 
-      @include pseudo-decorative(70px, 97px, -34px, 33px);
+      @include pseudo-decorative(70px, 97px, -34px, 16px);
       right: auto;
     }
 
     &--strong::after {
       background-image: url("../img/icon-cat-strong-middle.svg");
 
-      @include pseudo-decorative(135px, 57px, -9px, 1px);
+      @include pseudo-decorative(135px, 57px, -9px, -18px);
       right: auto;
     }
   }
@@ -117,8 +117,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 
-    @include pseudo-decorative(24px, 12px, 3px, auto);
-    right: 96px;
+    @include pseudo-decorative(24px, 12px, 0, auto);
+    right: 107px;
   }
 
   &:hover::after,
@@ -137,7 +137,7 @@
 
     &::after {
       top: 9px;
-      right: 220px;
+      right: 227px;
     }
   }
 
@@ -158,10 +158,15 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     margin-bottom: 29px;
-    max-width: 342px;
+    max-width: 400px;
+
+    &--strong {
+      max-width: 343px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 6px;
+    max-width: 462px;
   }
 }

@@ -7,15 +7,15 @@
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="img/favicon32.ico" type="image/x-icon">
   </head>
   <body class="page-body">
     <div style="display: none">
-      <include src="img/sprite.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header">
-      <div class="container">
+    <header class="page-header page-header--catalog">
+      <div class="container container--catalog">
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo logo">
@@ -54,7 +54,7 @@
     </header>
     <main class="page-catalog">
       <section class="catalog-section">
-        <div class="container">
+        <div class="container container--catalog">
           <h1 class="catalog-section__headline headline">Каталог продукции</h1>
           <div class="catalog-section__wrapper">
             <div class="catalog-section__product product product--main">
@@ -312,7 +312,7 @@
               <div class="product__border-wrapper">
                 <div class="product__pic-wrapper product__pic-wrapper--plus">
                   <svg class="plus-icon plus-icon product__plus-icon" aria-label="Загрузить больше товаров" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#icon-plus"></use>
+                    <use xlink:href="#plus-icon"></use>
                   </svg>
                 </div>
                 <div class="properties properties--show-more">
@@ -327,7 +327,7 @@
       </section>
       <div class="page-catalog__inner-wrapper">
         <section class="catalog-section catalog-section--more-goods">
-          <div class="container container--unset">
+          <div class="container container--catalog container--unset">
             <div class="catalog-section__inner-wrapper">
               <h2 class="catalog-section__title catalog-section__title--additional section-title section-title--border section-title--border-additional">Дополнительные товары</h2>
               <div class="catalog-section__wrapper catalog-section__wrapper--additional">
@@ -338,7 +338,7 @@
                     </a>
                     <table class="properties">
                       <tr class="properties__value properties__value--additional">
-                        <td class="properties__text properties__text--bigger">1 упаковка (100 г)</td>
+                        <td class="properties__text properties__text--left properties__text--bigger">1 упаковка (100 г)</td>
                         <td class="properties__text properties__text--bigger properties__text--right">200 р.</td>
                       </tr>
                     </table>
@@ -352,7 +352,7 @@
                     </a>
                     <table class="properties">
                       <tr class="properties__value properties__value--additional">
-                        <td class="properties__text properties__text--bigger">5 литров</td>
+                        <td class="properties__text properties__text--left properties__text--bigger">5 литров</td>
                         <td class="properties__text properties__text--bigger properties__text--right">50 р.</td>
                       </tr>
                     </table>
@@ -366,7 +366,7 @@
                     </a>
                     <table class="properties">
                       <tr class="properties__value properties__value--additional">
-                        <td class="properties__text properties__text--bigger">1 литр</td>
+                        <td class="properties__text properties__text--left properties__text--bigger">1 литр</td>
                         <td class="properties__text properties__text--bigger properties__text--right">100 р.</td>
                       </tr>
                     </table>
@@ -380,7 +380,7 @@
                     </a>
                     <table class="properties">
                         <tr class="properties__value properties__value--additional">
-                          <td class="properties__text properties__text--bigger">1 упаковка (30 г)</td>
+                          <td class="properties__text properties__text--left properties__text--bigger">1 упаковка (30 г)</td>
                           <td class="properties__text properties__text--bigger properties__text--right">300 р.</td>
                         </tr>
                     </table>
@@ -393,7 +393,7 @@
         </section>
         <section class="gift">
           <h2 class="visually-hidden">Подарок для покупателей</h2>
-          <div class="container container--unset container--fullheight">
+          <div class="container container--catalog container--unset container--fullheight">
             <a class="gift-link" href="#" aria-label="Перейти на страницу с акцией">
               <p class="gift-link__text">Закажите все и получите чехол для кота в подарок!</p>
             </a>
@@ -403,9 +403,9 @@
     </main>
     <footer class="page-footer">
       <section class="page-footer__contacts contacts contacts--form">
-        <div class="container">
+        <div class="container container--catalog">
           <div class="contacts__wrapper">
-            <h3 class="contacts__headline">приглашаем к сотрудничеству дилеров!</h3>
+            <h3 class="contacts__headline contacts__headline--catalog">приглашаем к сотрудничеству дилеров!</h3>
             <div class="contacts__adress-wrapper">
               <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8</p>
               <p class="contacts__adress">Санкт-Петербург</p>
@@ -417,7 +417,7 @@
       </section>
       <section class="page-footer__bottom-wrapper">
         <h2 class="visually-hidden">Ссылки для обратной связи</h2>
-        <div class="container">
+        <div class="container container--catalog">
           <div class="page-footer__inner-bottom-wrapper">
             <a class="page-footer__logo logo logo--footer" href="index.html" aria-label="Перейти на главную страницу">
               <img class="logo__icon logo__icon--footer" src="img/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy в виде котенка в супергеройском плаще">
@@ -428,21 +428,21 @@
                 <li class="socials__item socials__item--vk">
                   <a class="socials__link social-icon social-icon--vkontakte" href="https://vk.com/htmlacademy" aria-label="Перейти на нашу страницу ВКонтакте">
                     <svg class="social-icon__path social-icon__path--vk" aria-hidden="true" focusable="false" width="23" height="16" xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="#icon-vk"></use>
+                      <use xlink:href="#vk-icon"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socials__item">
+                <li class="socials__item socials__item--insta">
                   <a class="socials__link social-icon social-icon--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Перейти на нашу страницу Инстаграме">
                     <svg class="social-icon__path social-icon__path--insta" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="#icon-insta"></use>
+                      <use xlink:href="#insta-icon"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item socials__item--fb">
                   <a class="socials__link social-icon social-icon--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Перейти на нашу страницу Фейсбуке">
                     <svg class="social-icon__path social-icon__path--fb" width="13" height="20" xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="#icon-fb"></use>
+                      <use xlink:href="#fb-icon"></use>
                     </svg>
                   </a>
                 </li>
@@ -451,7 +451,7 @@
             <div class="page-footer__copyright copyright">
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика">HTML Academy
                 <svg class="copyright__icon" width="27" height="34" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#icon-academy"></use>
+                  <use xlink:href="#academy-logo"></use>
                 </svg>
               </a>
             </div>
@@ -459,6 +459,6 @@
         </div>
       </section>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

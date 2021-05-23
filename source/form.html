@@ -7,15 +7,15 @@
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="img/favicon32.ico" type="image/x-icon">
   </head>
   <body class="page-body">
     <div style="display: none">
-      <include src="img/sprite.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header page-header--form">
-      <div class="container">
+      <div class="container container--form">
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo logo">
@@ -54,7 +54,7 @@
     </header>
     <main class="page-form">
       <form class="form" method="get" action="https://echo.htmlacademy.ru">
-        <div class="container">
+        <div class="container container--form">
           <div class="form__inner-wrapper">
             <h1 class="form__headline headline">Подбор программы</h1>
             <p class="form__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
@@ -73,7 +73,7 @@
                   <input class="form-section__input form-input" type="text" id="cat-age" name="age" placeholder="7">
                 </div>
               </fieldset>
-              <fieldset class="form__section form-section form-section--programm">
+              <fieldset class="form__section form__section--programm form-section form-section--programm">
                 <ul class="form-section__list form-section__list--programm">
                   <li class="form-section__item">
                     <input class="form-section__input form-section__input--radio form-input form-input--radio visually-hidden" type="radio" id="lose-weight" name="programm" checked>
@@ -90,9 +90,9 @@
                 </ul>
               </fieldset>
             </div>
-            <fieldset class="form__section form-section">
-              <legend class="form-section__title section-title section-title--column section-title--border">Контактные данные (владельца кота)</legend>
-              <div class="form-section__wrapper">
+            <fieldset class="form__section form__section--contacts form-section">
+              <legend class="form-section__title form-section__title--contacts section-title section-title--column section-title--border section-title--border-catalog">Контактные данные (владельца кота)</legend>
+              <div class="form-section__wrapper form-section__wrapper--contacts">
                 <div class="form-section__row form-section__row--contacts">
                   <label class="form-section__label label" for="email">E-mail:*</label>
                   <input class="form-section__input form-input form-input--required form-input--contacts" type="text" id="email" name="email" placeholder="kuklachev@gmail.com">
@@ -110,14 +110,14 @@
               </div>
             </fieldset>
             <fieldset class="form__section form__section--short-indent form-section">
-              <legend class="form-section__title section-title section-title--border">Комментарий</legend>
+              <legend class="form-section__title form-section__title--comment section-title section-title--border section-title--border-catalog">Комментарий</legend>
               <div class="form-section__column">
                 <label class="visually-hidden" for="feedback"></label>
                 <textarea class="form-section__input form-input form-input--textarea" id="feedback" name="name" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
             <fieldset class="form__section form__section--last form-section">
-              <legend class="form-section__title form-section__title--short-indent section-title section-title--border">Дополнительно</legend>
+              <legend class="form-section__title form-section__title--short-indent section-title section-title--border section-title--border-catalog">Дополнительно</legend>
               <ul class="form-section__list">
                 <li class="form-section__item form-section__item--checkbox">
                   <input class="form-section__input form-section__input--checkbox form-input form-input--checkbox visually-hidden" type="checkbox" id="sweetener" name="supplements" checked>
@@ -147,10 +147,10 @@
     </main>
     <footer class="page-footer">
       <section class="page-footer__contacts contacts contacts--form">
-        <div class="container">
+        <div class="container container--form">
           <div class="contacts__wrapper">
             <h3 class="contacts__headline">приглашаем к сотрудничеству дилеров!</h3>
-            <div class="contacts__adress-wrapper">
+            <div class="contacts__adress-wrapper contacts__adress-wrapper--form">
               <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8</p>
               <p class="contacts__adress">Санкт-Петербург</p>
             </div>
@@ -161,7 +161,7 @@
       </section>
       <section class="page-footer__bottom-wrapper">
         <h2 class="visually-hidden">Ссылки для обратной связи</h2>
-        <div class="container">
+        <div class="container container--form">
           <div class="page-footer__inner-bottom-wrapper">
             <a class="page-footer__logo logo logo--footer" href="index.html" aria-label="Перейти на главную страницу">
               <img class="logo__icon logo__icon--footer" src="img/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy в виде котенка в супергеройском плаще">
@@ -172,21 +172,21 @@
                 <li class="socials__item socials__item--vk">
                   <a class="socials__link social-icon social-icon--vkontakte" href="https://vk.com/htmlacademy" aria-label="Перейти на нашу страницу ВКонтакте">
                     <svg class="social-icon__path social-icon__path--vk" aria-hidden="true" focusable="false" width="23" height="16" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-vk"></use>
+                      <use href="#vk-icon"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socials__item">
+                <li class="socials__item socials__item--insta">
                   <a class="socials__link social-icon social-icon--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Перейти на нашу страницу Инстаграме">
                     <svg class="social-icon__path social-icon__path--insta" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="#icon-insta"></use>
+                      <use xlink:href="#insta-icon"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item socials__item--fb">
                   <a class="socials__link social-icon social-icon--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Перейти на нашу страницу Фейсбуке">
                     <svg class="social-icon__path social-icon__path--fb" width="13" height="20" xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="#icon-fb"></use>
+                      <use xlink:href="#fb-icon"></use>
                     </svg>
                   </a>
                 </li>
@@ -195,7 +195,7 @@
             <div class="page-footer__copyright copyright">
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика">HTML Academy
                 <svg class="copyright__icon" width="27" height="34" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#icon-academy"></use>
+                  <use xlink:href="#academy-logo"></use>
                 </svg>
               </a>
             </div>
@@ -203,6 +203,6 @@
         </div>
       </section>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -49,6 +49,10 @@
   display: flex;
   justify-content: center;
 
+  &--footer {
+    margin-right: 0;
+  }
+
   &:hover,
   &:focus {
     opacity: 80%;

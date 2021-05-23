@@ -4,6 +4,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-top: 50px;
     }
   }
 }
@@ -21,12 +22,6 @@
 .properties__value {
   display: flex;
   justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    &--additional {
-      min-width: 220px;
-    }
-  }
 }
 
 .properties__text {
@@ -56,19 +51,30 @@
     &--show-more {
       text-align: center;
       padding-bottom: 0;
-      margin-bottom: 82px;
+      margin-bottom: 20px;
+      max-width: 167px;
+    }
+
+    &--left {
+      padding-right: 48px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--show-more {
+      margin-bottom: 89px;
     }
   }
 }
 
 .properties__title {
   margin: 0;
-  margin-bottom: 8px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     &--show-more {
       margin-bottom: 23px;
+      max-width: 134px;
     }
   }
 }

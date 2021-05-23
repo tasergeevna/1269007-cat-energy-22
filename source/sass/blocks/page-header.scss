@@ -5,6 +5,10 @@
     padding-bottom: 0;
   }
 
+  &--catalog {
+    padding-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
@@ -12,7 +16,7 @@
 
 .page-header--pseudo {
   @media (min-width: $desktop-width) {
-    background-image: url("../img/index-background-full.png"), linear-gradient(to left, $darkgreen 50%, $white 50%);
+    background-image: url("../img/index-background-full.png"), linear-gradient(to left, $darkgreen 40%, $white 40%);
     background-position: 100% 0, 0 0;
     background-repeat: no-repeat;
     min-height: 694px;

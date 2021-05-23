@@ -25,7 +25,7 @@
   color: $black;
   border: solid 1px $border-grey;
   border-radius: 4px;
-  padding: 14px 0 17px 0;
+  padding: 14px 0 15px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -34,7 +34,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 32px;
+    padding: 16px 37px 17px 33px;
+
+    &--days {
+      padding: 16px 30px 17px 34px;
+    }
   }
 }
 
@@ -42,7 +46,7 @@
   margin: 0;
   padding: 0 45px;
   position: relative;
-  top: -11px;
+  top: -10px;
   left: 0;
   background-color: $grey;
   max-width: 60px;

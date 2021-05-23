@@ -4,10 +4,11 @@
 
 .good-link__name {
   margin: 0;
-  max-width: 103px;
+  max-width: 99px;
 
   &--more {
-    margin-bottom: 13px;
+    margin-bottom: 8px;
+    max-width: 104px;
   }
 
   @media (min-width: $tablet-width) {

@@ -2,12 +2,14 @@
   @include reset-list();
   border-bottom: 1px solid $border-grey;
   border-top: 1px solid $border-grey;
-  padding-top: 36px;
+  padding-top: 19px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
     border-top: none;
     padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -20,7 +22,27 @@
     margin-left: 72px;
   }
 
+  &--insta {
+    margin-left: 15px;
+  }
+
   &--fb {
-    margin-right: 81px;
+    margin-right: 37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--insta {
+      margin-left: -2px;
+    }
+
+    &--fb {
+      margin-right: 46px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--insta {
+      margin-left: 2px;
+    }
   }
 }

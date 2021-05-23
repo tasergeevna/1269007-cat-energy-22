@@ -12,10 +12,6 @@
     grid-template-columns: repeat(3, auto);
     column-gap: 35px;
   }
-
-  @media (min-width: $desktop-width) {
-    column-gap: 25px;
-  }
 }
 
 .main-nav__item {
@@ -49,7 +45,7 @@
       display: none;
     }
 
-    &--current::after {
+    &--current::before {
       @include pseudo;
       @include pseudo-decorative(auto, 2px, 30px, 0);
 
