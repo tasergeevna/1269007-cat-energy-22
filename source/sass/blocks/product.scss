@@ -85,7 +85,7 @@
     background: linear-gradient(to bottom, $white 15%, $basic-grey 15%);
 
     &--additional {
-      padding: 12px 0 13px 0px;;
+      padding: 12px 0 13px 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 80px;
@@ -257,7 +257,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -2px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 10px 0;
 
     &--show-more {
