@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="preload" href="css/style.min.css" as="style">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="img/favicon32.ico" type="image/x-icon">
   </head>
@@ -18,7 +18,7 @@
       <div class="container container--form">
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo logo">
+            <a class="page-header__logo logo" href="index.html">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logo-tablet-icon.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet-icon.svg">
@@ -42,7 +42,7 @@
                   Каталог продукции
                 </a>
               </li>
-              <li class="main-nav__item main-nav__item--current main-nav__item--final">
+              <li class="main-nav__item main-nav__item--current main-nav__item--current-form main-nav__item--final">
                 <a class="main-nav__link main-nav__link--current">
                   Подбор программы
                 </a>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="form-section__row">
                   <label class="form-section__label label" for="cat-age">Возраст (лет):</label>
-                  <input class="form-section__input form-input" type="text" id="cat-age" name="age" placeholder="7">
+                  <input class="form-section__input form-input form-input--age" type="text" id="cat-age" name="age" placeholder="7">
                 </div>
               </fieldset>
               <fieldset class="form__section form__section--programm form-section form-section--programm">
@@ -91,7 +91,7 @@
               </fieldset>
             </div>
             <fieldset class="form__section form__section--contacts form-section">
-              <legend class="form-section__title form-section__title--contacts section-title section-title--column section-title--border section-title--border-catalog">Контактные данные (владельца кота)</legend>
+              <legend class="form-section__title form-section__title--contacts section-title section-title--column section-title--border section-title--border-form">Контактные данные (владельца кота)</legend>
               <div class="form-section__wrapper form-section__wrapper--contacts">
                 <div class="form-section__row form-section__row--contacts">
                   <label class="form-section__label label" for="email">E-mail:*</label>
@@ -110,14 +110,13 @@
               </div>
             </fieldset>
             <fieldset class="form__section form__section--short-indent form-section">
-              <legend class="form-section__title form-section__title--comment section-title section-title--border section-title--border-catalog">Комментарий</legend>
+              <legend class="form-section__title form-section__title--comment section-title section-title--border section-title--border-form">Комментарий</legend>
               <div class="form-section__column">
-                <label class="visually-hidden" for="feedback"></label>
                 <textarea class="form-section__input form-input form-input--textarea" id="feedback" name="name" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
             <fieldset class="form__section form__section--last form-section">
-              <legend class="form-section__title form-section__title--short-indent section-title section-title--border section-title--border-catalog">Дополнительно</legend>
+              <legend class="form-section__title form-section__title--short-indent section-title section-title--border section-title--border-form">Дополнительно</legend>
               <ul class="form-section__list">
                 <li class="form-section__item form-section__item--checkbox">
                   <input class="form-section__input form-section__input--checkbox form-input form-input--checkbox visually-hidden" type="checkbox" id="sweetener" name="supplements" checked>

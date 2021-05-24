@@ -36,6 +36,8 @@
 }
 
 .nav-toggle--nojs {
+  display: none;
+
   &--close::after {
     display: none;
   }

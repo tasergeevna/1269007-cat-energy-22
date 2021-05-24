@@ -1,9 +1,7 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.nav-toggle');
 
-navToggle.classList.remove('nav-toggle--nojs');
-
-navToggle.addEventListener('click', function() {
+function toogleMenu() {
   navMain.classList.toggle('main-nav--closed');
 
   if (navMain.classList.contains('main-nav--closed')) {
@@ -13,4 +11,9 @@ navToggle.addEventListener('click', function() {
     navToggle.classList.remove('nav-toggle--hamburger');
     navToggle.classList.add('nav-toggle--close');
   };
-});
+}
+
+navToggle.classList.remove('nav-toggle--nojs');
+toogleMenu();
+
+navToggle.addEventListener('click', toogleMenu);

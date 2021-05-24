@@ -28,7 +28,7 @@
     width: 100vw;
     height: 2px;
     top: 15px;
-    right: calc(-100vw + 20px);
+    right: calc(-100vw + 32px);
     background-color: $green;
   }
 
@@ -42,6 +42,7 @@
 
     &--border::after {
       top: 22px;
+      right: calc(-100vw - 22px);
     }
 
     &--border::before {
@@ -49,7 +50,7 @@
       width: 100vw;
       height: 2px;
       top: 24px;
-      left: -100vw;
+      left: calc(-100vw - 40px);
       background-color: $green;
     }
 
@@ -68,12 +69,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    &--border-catalog::after {
-      right: calc(-100vw - 27px);
+    &--border-form::after {
+      right: calc(-100vw - 25px);
+      top: 20px;
     }
 
-    &--border-catalog::before {
-      left: calc(-100vw - 20px);
+    &--border-form::before {
+      left: calc(-100vw - 40px);
+      top: 20px;
     }
 
     &--border-additional::after {

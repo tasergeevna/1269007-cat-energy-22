@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="preload" href="css/style.min.css" as="style">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="img/favicon32.ico" type="image/x-icon">
   </head>
@@ -18,7 +18,7 @@
       <div class="container container--catalog">
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo logo">
+            <a class="page-header__logo logo" href="index.html">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logo-tablet-icon.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet-icon.svg">
@@ -37,7 +37,7 @@
                   Главная
                 </a>
               </li>
-              <li class="main-nav__item main-nav__item--current">
+              <li class="main-nav__item main-nav__item--current main-nav__item--current-catalog">
                 <a class="main-nav__link main-nav__link--current">
                   Каталог продукции
                 </a>
@@ -334,7 +334,7 @@
                 <div class="catalog-section__product product product--additional">
                   <div class="product__description product__description--more">
                     <a class="product__link good-link" href="#" aria-label="Перейти на страницу товара">
-                      <h3 class="good-link__name good-link__name--more good-name">Сахарозаменитель</h3>
+                      <h3 class="good-link__name good-link__name--more good-link__name--more good-name">Сахарозаменитель</h3>
                     </a>
                     <table class="properties">
                       <tr class="properties__value properties__value--additional">
@@ -343,40 +343,40 @@
                       </tr>
                     </table>
                   </div>
-                  <a class="product__button button" href="#" aria-label="Купить товар">Заказать</a>
+                  <a class="product__button product__button--additional button" href="#" aria-label="Купить товар">Заказать</a>
                 </div>
                 <div class="catalog-section__product product product--additional">
                   <div class="product__description product__description--more">
                     <a class="product__link good-link" href="#" aria-label="Перейти на страницу товара">
-                      <h3 class="good-link__name good-link__name--more good-name">Питьевая вода</h3>
+                      <h3 class="good-link__name good-link__name--more good-link__name--more good-name">Питьевая вода</h3>
                     </a>
                     <table class="properties">
                       <tr class="properties__value properties__value--additional">
-                        <td class="properties__text properties__text--left properties__text--bigger">5 литров</td>
+                        <td class="properties__text properties__text--left properties__text--left-water properties__text--bigger">5 литров</td>
                         <td class="properties__text properties__text--bigger properties__text--right">50 р.</td>
                       </tr>
                     </table>
                   </div>
-                  <a class="product__button button" href="#" aria-label="Купить товар">Заказать</a>
+                  <a class="product__button product__button--additional button" href="#" aria-label="Купить товар">Заказать</a>
                 </div>
                 <div class="catalog-section__product product product--additional">
                   <div class="product__description product__description--more">
                     <a class="product__link good-link" href="#" aria-label="Перейти на страницу товара">
-                      <h3 class="good-link__name good-link__name--more good-name">Молоко</h3>
+                      <h3 class="good-link__name good-link__name--more good-link__name--more good-name">Молоко</h3>
                     </a>
                     <table class="properties">
                       <tr class="properties__value properties__value--additional">
-                        <td class="properties__text properties__text--left properties__text--bigger">1 литр</td>
+                        <td class="properties__text properties__text--left properties__text--left-milk properties__text--bigger">1 литр</td>
                         <td class="properties__text properties__text--bigger properties__text--right">100 р.</td>
                       </tr>
                     </table>
                   </div>
-                  <a class="product__button button" href="#" aria-label="Купить товар">Заказать</a>
+                  <a class="product__button product__button--additional button" href="#" aria-label="Купить товар">Заказать</a>
                 </div>
                 <div class="catalog-section__product product product--additional">
                   <div class="product__description product__description--more">
                     <a class="product__link good-link" href="#" aria-label="Перейти на страницу товара">
-                      <h3 class="good-link__name good-link__name--more good-name">Витамины</h3>
+                      <h3 class="good-link__name good-link__name--more good-link__name--more good-name">Витамины</h3>
                     </a>
                     <table class="properties">
                         <tr class="properties__value properties__value--additional">
@@ -385,7 +385,7 @@
                         </tr>
                     </table>
                   </div>
-                  <a class="product__button button" href="#" aria-label="Купить товар">Заказать</a>
+                  <a class="product__button product__button--additional button" href="#" aria-label="Купить товар">Заказать</a>
                 </div>
               </div>
             </div>
@@ -402,13 +402,13 @@
       </div>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__contacts contacts contacts--form">
+      <section class="page-footer__contacts contacts contacts--catalog">
         <div class="container container--catalog">
-          <div class="contacts__wrapper">
+          <div class="contacts__wrapper contacts__wrapper--catalog">
             <h3 class="contacts__headline contacts__headline--catalog">приглашаем к сотрудничеству дилеров!</h3>
             <div class="contacts__adress-wrapper">
-              <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="contacts__adress">Санкт-Петербург</p>
+              <p class="contacts__adress contacts__adress--catalog">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__adress contacts__adress--catalog">Санкт-Петербург</p>
             </div>
           </div>
         </div>

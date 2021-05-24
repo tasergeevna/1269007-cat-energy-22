@@ -3,11 +3,12 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    padding-top: 15px;
     padding-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 118px;
+    padding-top: 112px;
     padding-bottom: 0;
     grid-column: 4/5;
     position: relative;

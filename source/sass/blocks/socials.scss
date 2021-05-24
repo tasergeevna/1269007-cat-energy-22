@@ -10,6 +10,7 @@
     border-top: none;
     padding-top: 0;
     padding-bottom: 0;
+    max-width: 129px;
   }
 }
 
@@ -22,21 +23,17 @@
     margin-left: 72px;
   }
 
-  &--insta {
-    margin-left: 15px;
-  }
-
   &--fb {
-    margin-right: 37px;
+    margin-right: 80px;
   }
 
   @media (min-width: $tablet-width) {
-    &--insta {
-      margin-left: -2px;
+    &--vk {
+      margin-left: 13px;
     }
 
     &--fb {
-      margin-right: 46px;
+      margin-right: 0;
     }
   }
 

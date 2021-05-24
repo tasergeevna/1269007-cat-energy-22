@@ -135,12 +135,12 @@
 
   @media (min-width: $desktop-width) {
     &--before {
-      margin-right: 35px;
+      margin-right: 25px;
     }
 
     &--after {
       margin-right: 0;
-      margin-left: 23px;
+      margin-left: 21px;
     }
   }
 }
@@ -162,7 +162,8 @@
 
   @media (min-width: $desktop-width) {
     bottom: 70px;
-    left: 58%;
+    left: 120px;
+    transform: unset;
   }
 }
 

@@ -2,6 +2,7 @@
   text-decoration: none;
   min-height: 289px;
   background-image: url("../img/gift-background.png");
+  background-color: $green;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -15,7 +16,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-position: 70% 70%;
+    background-position: 0 65%;
     flex-direction: row;
     align-items: center;
     padding-right: 124px;
@@ -70,13 +71,13 @@
   @media (min-width: $desktop-width) {
     text-align: center;
     padding-top: 130px;
-    padding-bottom: 43px;
+    padding-bottom: 44px;
 
     &::before {
       width: 80px;
       height: 82px;
-      bottom: 142px;
-      left: calc(50% - 41px);
+      bottom: 152px;
+      left: calc(50% - 38px);
       right: auto;
     }
   }

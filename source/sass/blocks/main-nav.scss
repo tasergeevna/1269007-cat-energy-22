@@ -2,6 +2,10 @@
   &--closed {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .main-nav__list {
@@ -48,11 +52,15 @@
 
     &--current::before {
       @include pseudo;
-      @include pseudo-decorative(auto, 2px, 37px, 0);
+      @include pseudo-decorative(auto, 2px, 32px, 0);
 
       background-color: $green;
       right: 0;
       bottom: 0;
+    }
+
+    &--current-form::before {
+      top: 30px;
     }
 
     &--final::after {
@@ -65,9 +73,13 @@
       top: 37px;
     }
 
+    &--current-form::before {
+      top: 34px;
+    }
+
     &--current-main::after {
       @include pseudo;
-      @include pseudo-decorative(auto, 2px, 37px, 0);
+      @include pseudo-decorative(auto, 2px, 32px, 0);
       right: 0;
       bottom: 0;
       background-color: $white;

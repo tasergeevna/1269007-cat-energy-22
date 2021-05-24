@@ -136,14 +136,13 @@
 
     &::after {
       top: 9px;
-      right: 227px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
       top: 9px;
-      right: 306px;
+      left: 136px;
     }
   }
 }
