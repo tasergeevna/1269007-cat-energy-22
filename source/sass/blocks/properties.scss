@@ -7,6 +7,13 @@
       padding-top: 6px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--additional {
+      min-width: 291px;
+      margin-top: 6px;
+    }
+  }
 }
 
 .properties__wrapper {
@@ -78,6 +85,10 @@
 
     &--left-milk {
       padding-right: 150px;
+    }
+
+    &--fifty {
+      margin-right: 10px;
     }
   }
 }

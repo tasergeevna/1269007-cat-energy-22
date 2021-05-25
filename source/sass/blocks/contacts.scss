@@ -48,10 +48,7 @@
   text-transform: uppercase;
   margin: 0;
   padding-right: 13px;
-
-  &--catalog {
-    max-width: 140px;
-  }
+  max-width: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -110,17 +107,12 @@
 
     &:first-child {
       margin-top: 9px;
-      margin-left: 81px;
       margin-bottom: 19px;
     }
 
     &--catalog:first-child {
       margin-top: 13px;
       margin-left: 52px;
-    }
-
-    &:last-child {
-      margin-left: 79px;
     }
 
     &--catalog:last-child {
